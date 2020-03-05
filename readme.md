@@ -113,8 +113,8 @@ WORDPRESS_ROOT_DIRECTORY/wp-content/plugins/wp-dhis_analytics_1.0.10
 
 ### 3.1 Adding a block to your post or page
 To Add a DHIS2 Analytics block on your WordPress post or page, identify the section within your new or existing post or page that you need to display DHIS2 dashboards and decide whether to display the contents as single item, slideshow or grid. Follow the steps below to add a block.
-To add any Guttenberg block, within your block editor, look for the [+](2020-02-28/plus.png) icon on top of the page or by hovering your mouse within the section that you need to add the block.
-At the top of the post or page, the first [+](2020-02-28/plus.png) icon on the left:
+To add any Guttenberg block, within your block editor, look for the ![+](2020-02-28/plus.png) icon on top of the page or by hovering your mouse within the section that you need to add the block.
+At the top of the post or page, the first ![+](2020-02-28/plus.png) icon on the left:
 
 ![](2020-02-28/plus_sign_p-2.png)
 
@@ -127,7 +127,7 @@ All Guttenberg blocks are accessible through this approach and are grouped into 
 
 Select the DHIS2 Analytics Block to add in your post or page. When done,  have added a DHIS2 Analytics Block on your post or page. You should be able to see the following DHIS2 block.
 
-![](2020-02-28/pastedGraphic 7.png)
+![](2020-02-28/pastedGraphic\ 7.png)
 
 
 ### **3.2 Configure your block**
