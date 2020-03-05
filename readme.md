@@ -125,22 +125,22 @@ Within your post or page, hover your mouse in the section that you need to add t
 Within the page, you can also see the most recently used block icons.
 All Guttenberg blocks are accessible through this approach and are grouped into most used, common blocks, formatting, layout elements, widgets, embeds and ultimate blocks. DHIS2 analytics can be found in the Common Blocks Category.
 
-Select the DHIS2 Analytics Block to add in your post or page. When done,  have added a DHIS2 Analytics Block on your post or page. You should be able to see the following DHIS2 block.
+Select the DHIS2 Analytics Block to add in your post or page.
+DHIS2 Analytics Block will connect to DHIS2 instance configured and pull all the available dashboards. Each dashboard has dashboard items that you can select to display in your post.
+
+When done, have added a DHIS2 Analytics Block on your post or page. You should be able to see the following DHIS2 block.
 
 ![](2020-02-28/pastedGraphic_7.png)
 
 
-### **3.2 Configure your block**
+## 3.2 Configure your block
 To be able to display the contents now on the front end page, you will need to configure your new DHIS2 Analytics block. This section will guide you through how to configure the block.
 
-### **3.2.1 Identifying display items**
+### 3.2.1 Identifying display items
 The DHIS2 Analytics plugin now support DHIS2 analytics objects below
-**Maps**
-**Charts**
-**Report Tables**
-**Text**
-**Resources**
-**Unsupported**
+Maps | Charts | Report Tables | Text | Resources | Unsupported
+---- | ------ | ------------- | ---- | --------- | -----------
+![](2020-02-28/image24.png) | ![](2020-02-28/image25.png) | ![](2020-02-28/image26.png) | ![](2020-02-28/image27.png) | ![](2020-02-28/image28.png) | ![](2020-02-28/image29.png)
 
 ### **3.2.2 Display Settings**
 By default, the DHIS2 Analytics block is set to single item display. This will allow you only to select one dashboard item from all the dashboards available. In all cases, you can set the display size for the block, by default, it is in Full size  or you can select Custom Size and specify the width and height in Pixels (px)
