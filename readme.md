@@ -127,7 +127,7 @@ All Guttenberg blocks are accessible through this approach and are grouped into 
 
 Select the DHIS2 Analytics Block to add in your post or page. When done,  have added a DHIS2 Analytics Block on your post or page. You should be able to see the following DHIS2 block.
 
-![](2020-02-28/pastedGraphic\ 7.png)
+![](2020-02-28/pastedGraphic_7.png)
 
 
 ### **3.2 Configure your block**
