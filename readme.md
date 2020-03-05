@@ -58,38 +58,42 @@ You will also be able to search for the plugin directly from WordPress online Wo
 
 #### Uploading and installing
 
-Choose the plugin file from your local storage and Click Install Now a s below
+![](2020-02-28/image6.png)
 
- Searching directly from WordPress repository
+Choose the plugin file from your local storage and Click Install Now as below
+![](2020-02-28/image7.png)
 
-### **2.4 Activating the Plugin**
+Searching directly from WordPress repository
+![](2020-02-28/image8.png)
+
+### 2.4 Activating the Plugin
 After installing the Plugin using either approach, Activate your Plugin to prepare it for use. Activating DHIS2 Analytics will allow you to proceed to the next step of Configurations.
 
-![](2020-02-28/pastedGraphic%202.png)
+![](2020-02-28/image10.png)
 
 Click on Activate below the DHIS2 Analytics Plugin. Once done, you should see the plugin status as below and also note that on the left panel, a new setting options called DHIS2 Analytics is displayed as below
-![](2020-02-28/pastedGraphic%203.png)
+![](2020-02-28/image11.png)
 
 ### **2.3 Configurations**
- When activated, DHIS2 Analytics plugin creates a settings option page that requires you to set basic details required for it to run. On the left panel as shown, click on DHIS2 Analytics (highlighted in blue) to open the page.
+When activated, DHIS2 Analytics plugin creates a settings option page that requires you to set basic details required for it to run. On the left panel as shown, click on DHIS2 Analytics (highlighted in blue) to open the page.
+
+![](2020-02-28/image11-a-2.png)
+
 Your page will be open as shown below
 
-![](2020-02-28/pastedGraphic%204.png)
+![](2020-02-28/image15.png)
 
 The Basic information required are the details for the DHIS2 instance that you want to integrate with the WordPress through the plugin. Currently we support only one instance of DHIS2. Once done with adding the details,
 
 ### **Save Changes.**
 
-Required item
-Description
-DHIS2 URI
-This is the url address of the DHIS2 instances. Must be a valid URL
-DHIS2 Username
-This is an existing username in DHIS2 with basic access to dashboards and dashboard items
-DHIS2 Password
-This is the password for the above username.
-DHIS2 Version
-For compatibility with lower version 2.29 and below, we require you to specify the DHIS2 version. Either 2.29 or 2.30+
+Required item | Description
+------------- | -----------
+
+DHIS2 URI | This is the url address of the DHIS2 instances. Must be a valid URL
+DHIS2 Username | This is an existing username in DHIS2 with basic access to dashboards and dashboard items
+DHIS2 Password | This is the password for the above username.
+DHIS2 Version | For compatibility with lower version 2.29 and below, we require you to specify the DHIS2 version. Either 2.29 or 2.30+
 
 ### **2.5 Uninstalling**
 To remove the DHIS2 Analytics plugin from your wordpress website, go to Plugins page and first deactivate the Plugin. Once deactivated, you will be able to see Delete option to the plugin.
