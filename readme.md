@@ -169,15 +169,16 @@ For example: 450px and 300px
 Other supported units include %, vw (widths), vh (heights)
 
 
-#### Multiple Items Display
+### Multiple Items Display
 DHIS2 Analytics also supports multiple item display. When selected, two display modes Grid and Slideshow displays are provided.
 
 #### Grid Display
   Grid Display allows you to display selected dashboard items in a grid. You can specify the number of items per row defaulted to 2.  Additionally you specify the custom size by indicating the width and height in pixel.
 
-![](2020-02-28/image33.png)	
+![](2020-02-28/image33.png)
 
 #### How to create Grid block
+![](2020-02-28/mid.png)
 1. On the Block Options,
 	a. Under Display Items, select Multiple Items
 	b. Select Grid Display under Display Mode
