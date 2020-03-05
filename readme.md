@@ -71,7 +71,8 @@ After installing the Plugin using either approach, Activate your Plugin to prepa
 
 ![](2020-02-28/image10.png)
 
-Click on Activate below the DHIS2 Analytics Plugin. Once done, you should see the plugin status as below and also note that on the left panel, a new setting options called DHIS2 Analytics is displayed as below
+Click on Activate below the DHIS2 Analytics Plugin. Once done, you should see the plugin status as below and also note that on the left panel, a new setting options called DHIS2 Analytics is displayed as below:
+
 ![](2020-02-28/image11.png)
 
 ### **2.3 Configurations**
@@ -79,13 +80,11 @@ When activated, DHIS2 Analytics plugin creates a settings option page that requi
 
 ![](2020-02-28/image11-a-2.png)
 
-Your page will be open as shown below
+Your page will be open as shown below:
 
 ![](2020-02-28/image15.png)
 
-The Basic information required are the details for the DHIS2 instance that you want to integrate with the WordPress through the plugin. Currently we support only one instance of DHIS2. Once done with adding the details,
-
-### **Save Changes.**
+The Basic information required are the details for the DHIS2 instance that you want to integrate with the WordPress through the plugin. Currently we support only one instance of DHIS2. Once done with adding the details, don't forget to click Save Changes.
 
 Required item | Description
 ------------- | -----------
@@ -94,8 +93,11 @@ DHIS2 Username | This is an existing username in DHIS2 with basic access to dash
 DHIS2 Password | This is the password for the above username.
 DHIS2 Version | For compatibility with lower version 2.29 and below, we require you to specify the DHIS2 version. Either 2.29 or 2.30+
 
+Note: Always create a separate username / password for your DHIS2 instance that will only have access to reports. Do not use the Admin username / password.
+
 ### 2.5 Uninstalling
 To remove the DHIS2 Analytics plugin from your wordpress website, go to Plugins page and first deactivate the Plugin. Once deactivated, you will be able to see Delete option to the plugin.
+
  ![](2020-02-28/image12-a.png)
 
 Now, you can delete the plugin or you may change your mind and activate it again as below.
@@ -103,22 +105,29 @@ Now, you can delete the plugin or you may change your mind and activate it again
 ![](2020-02-28/image10-a.png)
 
 If you have direct access to the Server backend, you can also delete the plugin directly from the plugin directory within Wordpress root directory
-WORDPRESS_ROOT_DIRECTORY_wp-content_plugins/wp-dhis_analytics_1.0.10
+WORDPRESS_ROOT_DIRECTORY/wp-content/plugins/wp-dhis_analytics_1.0.10
 
-## 3. DHIS2 Analytics Blocks**
+## 3. DHIS2 Analytics Blocks
  A Block is a a piece of content that can be inserted on a WordPress post or page. WordPress 5.0 + comes with an inbuilt Guttenberg Block Editors that supports adding a block into a page or post using a simplified user interface. The DHIS2 Analytics plugin is a custom Wordpress Guttenberg block developed to display DHIS2 dashboards.  In this guide, we’re going to introduce the Gutenberg DHIS2 Analytics blocks system and show you how to use it
 
-### **3.1 Adding a block to your post or page**
+
+### 3.1 Adding a block to your post or page
 To Add a DHIS2 Analytics block on your WordPress post or page, identify the section within your new or existing post or page that you need to display DHIS2 dashboards and decide whether to display the contents as single item, slideshow or grid. Follow the steps below to add a block.
-  To add any Guttenberg block, within your block editor, look for icon on top of the page or by hovering your mouse within the section that you need to add the block.
- At the top of the post or page, the first icon on the left
+To add any Guttenberg block, within your block editor, look for the [+](2020-02-28/plus.png) icon on top of the page or by hovering your mouse within the section that you need to add the block.
+At the top of the post or page, the first [+](2020-02-28/plus.png) icon on the left:
 
-Within your post or page, hover your mouse in the section that you need to add the block
+![](2020-02-28/plus_sign_p-2.png)
 
-Within the page, you can also see the most recently used block icons as show above in the green square. You have to know the block icon.
-After getting the right icon, click on it to select the block you want to add. All Guttenberg blocks are accessible through this approach and are grouped into most used, common blocks, formatting, layout elements, widgets, embeds and ultimate blocks. DHIS2 analytics can be found in the Common Blocks Category.
-Select the DHIS2 Analytics Block to add in your post or page. When done, congratulation, you have added a DHIS2 Analytics Block on your post or page. You should be able to see the following DHIS2 block.
+Within your post or page, hover your mouse in the section that you need to add the block, and click the plus icon there.
 
+![](2020-02-28/image22.png)
+
+Within the page, you can also see the most recently used block icons.
+All Guttenberg blocks are accessible through this approach and are grouped into most used, common blocks, formatting, layout elements, widgets, embeds and ultimate blocks. DHIS2 analytics can be found in the Common Blocks Category.
+
+Select the DHIS2 Analytics Block to add in your post or page. When done,  have added a DHIS2 Analytics Block on your post or page. You should be able to see the following DHIS2 block.
+
+![](2020-02-28/pastedGraphic 7.png)
 
 
 ### **3.2 Configure your block**
