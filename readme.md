@@ -180,17 +180,19 @@ DHIS2 Analytics also supports multiple item display. When selected, two display 
 #### How to create Grid block
 ![](2020-02-28/mid.png)
 1. On the Block Options,
-	a. Under Display Items, select Multiple Items
-	b. Select Grid Display under Display Mode
-	c. Optionally set Display Size (default to Full Size). If set to Custom, Specify the width and heights
-	d. Optionally Set Items per row (default to 2). You can change it to any positive number depending on the space available.
-	e. Optionally enable caption to display names of the items as set from DHIS2
+	* a. Under Display Items, select Multiple Items
+	* b. Select Grid Display under Display Mode
+	* c. Optionally set Display Size (default to Full Size). If set to Custom, Specify the width and heights
+	* d. Optionally Set Items per row (default to 2). You can change it to any positive number depending on the space available.
+	* e. Optionally enable caption to display names of the items as set from DHIS2
 
 2. Select the Dashboard Items that you need to display from the available list of dashboards displayed. You can select all the supported item types and mix them as possible.
+![](2020-02-28/sel.png)
+
 3. Publish or Save your post or page to save the block as in 3.4
 4. Preview or View your post or page.
 
-![](2020-02-28/pastedGraphic%207.png)
+![](2020-02-28/preview.png)
 
 #### **Slideshow Display**
   DHIS2 Analytics also supports slideshow display of of selected dashboard items.  Under display modes, you select Slideshow and optionally leave the rest of the attributes to default. The difference with other displays, Slideshow only allows configuring the height if Custom Size is selected.
