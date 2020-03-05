@@ -49,7 +49,7 @@ WordPress Plugin repository
 Details to be added once it is successfully uploaded into the Wordpress plugin repository.
 Using either options, Go to Plugins management panel:
 
-![](2020-02-28/pastedGraphic.png)
+![](WP_DHIS2_Analytics_1010_html_e216a6294af50dc6.png)
 
 Select the option Add New  to add DHIS2 Analytics plugin. You should be able to see the screen below. Here you can decide to upload a zipped file (e.g. wp-dhis-analytics-1.0.10.zip) downloaded from  [Github](https://github.com/Stephocay-Limited/wp-dhis2-analytics/releases/download/1.0.10/dhis_analytics_1.0.10.zip).
 
