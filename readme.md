@@ -1,4 +1,3 @@
-
 # DHIS2 Wordpress Plugin
 A WordPress Guttenberg block plugin for displaying DHIS2 dashboards into a WordPress webpage.
 
@@ -14,25 +13,26 @@ DHIS2 Analytics is a WordPress Guttenberg Block plugin developed by Stephocay Li
 
 Welcome to DHIS2 Analytics, your ultimate WordPress Guttenberg block plugin for displaying DHIS2 dashboards in a WordPress powered website.
 DHIS2 Analytics is developed to extend the functionality of a WordPress website to display DHIS2 dashboards by providing:
-•	Simplified and intuitive user interface without the need to do programming (No programming skills required)
-•	Providing configurable interface for selecting the right dashboard item
-•	Provision of dynamic DHIS2 based contents as configured in the WordPress editor block settings.
-•	Support the default WordPress Guttenberg Editor that is shipped with latest version of WordPress.
-•	Provide end users with diverse options to display DHIS2 contents as desired by the content managers.
+* Simplified and intuitive user interface without the need to do programming (No programming skills required)
+* Providing configurable interface for selecting the right dashboard item
+* Provision of dynamic DHIS2 based contents as configured in the WordPress editor block settings.
+* Support the default WordPress Guttenberg Editor that is shipped with latest version of WordPress.
+* Provide end users with diverse options to display DHIS2 contents as desired by the content managers.
+
 The DHIS2 Analytics plugin has been made to support all major latest DHIS2 versions and was tested from DHIS2 2.29 and above.
 If you are new to WordPress, refer to [Getting Started with WordPress](https://wordpress.org/support/article/new_to_wordpress_-_where_to_start/) Getting Started with WordPress. Setup and configuration of WordPress is beyond the scope of this manual.
 This document provides you with simplified steps and guidance on installing, configuring and using the plugin within your WordPress powered website.
 
-## **2. Getting Started**
-This section will guide you through the process of installing, activating and configuring the DHIS2 analytics plugin into your existing WordPress powered website. The section has been divided into subsectiuon to give you a concise note on the various requirements required to setup a successful DHIS2 Analytics block plugin on your WordPress website.
+## 2. Getting Started
+This section will guide you through the process of installing, activating and configuring the DHIS2 analytics plugin into your existing WordPress powered website. The section has been divided into subsection to give you a concise note on the various requirements required to setup a successful DHIS2 Analytics block plugin on your WordPress website.
 
-### **2.1 Software Requirement**
+### 2.1 Software Requirement
 
 Before installing DHIS2 Analytics  Plugin within your WordPress Powered website, ensure that the following minimum requirements are met. Please note that DHIS2 Analytics has been tested on versions highligted below. While the plugin has been built to support generic DHIS2 implementation, we can not gurantee the future versions after DHIS2 2.33
-Software
-Minimum Requirements
+
+Software | Minimum Requirements |
 WordPress
-**Version 5.0 +**
+Version 5.0 + |
 1. Disk Space: 1GB+ 
 2. Web Server: Apache or Nginx
 3. Database: MySQL version 5.0.15 or greater or any version of MariaDB.
@@ -40,11 +40,11 @@ WordPress
 5. PHP:  Version 7.3 or greater.
 6. Processor: 1.0GHz+
 
-DHIS2 Software
+DHIS2 Software |
 * Minimum Version:  2.29 +
 * Maxmium Version: 2.33
-**NB**: Later versions after 2.33 have not been tested yet
-Web Browser
+**NB**: Later versions after 2.33 have not been tested yet |
+Web Browser | 
 * Latest versions of Web browsers.
 	* Google Chrome
 	* Firefox
