@@ -30,7 +30,8 @@ This section will guide you through the process of installing, activating and co
 
 Before installing DHIS2 Analytics  Plugin within your WordPress Powered website, ensure that the following minimum requirements are met. Please note that DHIS2 Analytics has been tested on versions highligted below. While the plugin has been built to support generic DHIS2 implementation, we can not gurantee the future versions after DHIS2 2.33
 
-Software | Minimum Requirements |
+Software | Minimum Requirements
+-------- | --------------------
 WordPress
 Version 5.0 + |
 1. Disk Space: 1GB+ 
@@ -44,7 +45,7 @@ DHIS2 Software |
 * Minimum Version:  2.29 +
 * Maxmium Version: 2.33
 **NB**: Later versions after 2.33 have not been tested yet |
-Web Browser | 
+Web Browser |
 * Latest versions of Web browsers.
 	* Google Chrome
 	* Firefox
