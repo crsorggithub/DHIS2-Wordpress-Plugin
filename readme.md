@@ -198,7 +198,7 @@ DHIS2 Analytics also supports multiple item display. When selected, two display 
   DHIS2 Analytics also supports slideshow display of of selected dashboard items.  Under display modes, you select Slideshow and optionally leave the rest of the attributes to default. The difference with other displays, Slideshow only allows configuring the height if Custom Size is selected.
   The steps of creating slideshow displays using DHIS2 Analytics is not different from the Grid Display Option except that for Custom Size, you are ONLY required to specify the height in pixel.
 
-	![](2020-02-28/ss.png)
+![](2020-02-28/sel.png)
 
  #### How to create Slideshow block
 1. On the Block Option,
