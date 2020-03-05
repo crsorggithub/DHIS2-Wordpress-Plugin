@@ -198,26 +198,32 @@ DHIS2 Analytics also supports multiple item display. When selected, two display 
   DHIS2 Analytics also supports slideshow display of of selected dashboard items.  Under display modes, you select Slideshow and optionally leave the rest of the attributes to default. The difference with other displays, Slideshow only allows configuring the height if Custom Size is selected.
   The steps of creating slideshow displays using DHIS2 Analytics is not different from the Grid Display Option except that for Custom Size, you are ONLY required to specify the height in pixel.
 
- #### **How to create Slideshow block**
+	![](2020-02-28/ss.png)
+
+ #### How to create Slideshow block
 1. On the Block Option,
-	a. Select Multiple Items under Display Items
-	b. Next set Display Mode to Slideshow Display
-	c. Then you can Optionally set Display Size. Note that if Custom Size is Selected, you will be only required to Specify Height in Pixel.
-	d. Optionally Enable Caption to display Item names below each item
-	e. Then finally, There is a new section (Slideshow Settings), Under this Specify the duration in miliseconds for the contents to remain on screens. Default is 1 Minute (60000ms). Refer to the form below
+	* a. Select Multiple Items under Display Items
+	* b. Next set Display Mode to Slideshow Display
+	* c. Then you can Optionally set Display Size. Note that if Custom Size is Selected, you will be only required to Specify Height in Pixel.
+	* d. Optionally Enable Caption to display Item names below each item
+	* e. Then finally, There is a new section (Slideshow Settings), Under this Specify the duration in miliseconds for the contents to remain on screens. Default is 1 Minute (60000ms). To get the time in Miliseconds, multiply every second by 1000. So 6 seconds is 6 * 1000 which is 6000 Miliseconds.
+
 
 2. Select the Dashboard Items that you need to display from the available list of dashboards displayed. You can select all the supported item types and mix them as possible.
+
+![](2020-02-28/sel.png)
 
 3. Publish or Save your post or page to save the block as in 3.4
 4. Preview or View your post or page.
 
-### **3.4 Saving and Updating your block**
+### 3.4 Saving and Updating your block
  To save your block, you will be required to publish or update your post or page if it is new or existing respectively. Once published or updated, you can preview the post or page to see how the new block will display on the frontend page.
 
-### **3.5 Previewing your block**
- To Preview your post or page, click on the Preview button as shown below
-### **3.6 Removing your block**
-   Sometimes, you might want to remove your created DHIS2 Analytics block from your post or page. To achieve this, click on the Block, and click on the block More Options  icon.
+### 3.5 Previewing your block
+ To Preview your post or page, click on the Preview button in the top right menu.
+
+### 3.6 Removing your block
+   Sometimes, you might want to remove your created DHIS2 Analytics block from your post or page. To achieve this, click on the Block, and click on the block More Options icon.
 
 ![](2020-02-28/pastedGraphic%208.png)
 
