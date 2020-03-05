@@ -137,7 +137,8 @@ When done, have added a DHIS2 Analytics Block on your post or page. You should b
 To be able to display the contents now on the front end page, you will need to configure your new DHIS2 Analytics block. This section will guide you through how to configure the block.
 
 ### 3.2.1 Identifying display items
-The DHIS2 Analytics plugin now support DHIS2 analytics objects below
+The DHIS2 Analytics plugin now support DHIS2 analytics objects below:
+
 Maps | Charts | Report Tables | Text | Resources | Unsupported
 ---- | ------ | ------------- | ---- | --------- | -----------
 ![](2020-02-28/image24.png) | ![](2020-02-28/image25.png) | ![](2020-02-28/image26.png) | ![](2020-02-28/image27.png) | ![](2020-02-28/image28.png) | ![](2020-02-28/image29.png)
