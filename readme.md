@@ -75,7 +75,7 @@ Click on Activate below the DHIS2 Analytics Plugin. Once done, you should see th
 ![](2020-02-28/image11.png)
 
 ### **2.3 Configurations**
-When activated, DHIS2 Analytics plugin creates a settings option page that requires you to set basic details required for it to run. On the left panel as shown, click on DHIS2 Analytics (highlighted in blue) to open the page.
+When activated, DHIS2 Analytics plugin creates a settings option page that requires you to set basic details required for it to run. On the left panel as shown, click on DHIS2 Analytics (highlighted in red) to open the page.
 
 ![](2020-02-28/image11-a-2.png)
 
@@ -89,24 +89,23 @@ The Basic information required are the details for the DHIS2 instance that you w
 
 Required item | Description
 ------------- | -----------
-
 DHIS2 URI | This is the url address of the DHIS2 instances. Must be a valid URL
 DHIS2 Username | This is an existing username in DHIS2 with basic access to dashboards and dashboard items
 DHIS2 Password | This is the password for the above username.
 DHIS2 Version | For compatibility with lower version 2.29 and below, we require you to specify the DHIS2 version. Either 2.29 or 2.30+
 
-### **2.5 Uninstalling**
+### 2.5 Uninstalling
 To remove the DHIS2 Analytics plugin from your wordpress website, go to Plugins page and first deactivate the Plugin. Once deactivated, you will be able to see Delete option to the plugin.
- ![](2020-02-28/pastedGraphic%205.png)
+ ![](2020-02-28/image12-a.png)
 
 Now, you can delete the plugin or you may change your mind and activate it again as below.
 
-![](2020-02-28/pastedGraphic%206.png)
+![](2020-02-28/image10-a.png)
 
 If you have direct access to the Server backend, you can also delete the plugin directly from the plugin directory within Wordpress root directory
 WORDPRESS_ROOT_DIRECTORY_wp-content_plugins/wp-dhis_analytics_1.0.10
 
-## **3. DHIS2 Analytics Blocks**
+## 3. DHIS2 Analytics Blocks**
  A Block is a a piece of content that can be inserted on a WordPress post or page. WordPress 5.0 + comes with an inbuilt Guttenberg Block Editors that supports adding a block into a page or post using a simplified user interface. The DHIS2 Analytics plugin is a custom Wordpress Guttenberg block developed to display DHIS2 dashboards.  In this guide, we’re going to introduce the Gutenberg DHIS2 Analytics blocks system and show you how to use it
 
 ### **3.1 Adding a block to your post or page**
