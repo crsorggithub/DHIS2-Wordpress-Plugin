@@ -38,13 +38,14 @@ DHIS2 Software | * Minimum Version:  2.29 + <br> * Maxmium Version: 2.33 <br> NB
 Web Browser | * Latest versions of Web browsers. <br> 	* Google Chrome <br>  	* Firefox <br>  	* Opera <br>  	* Edge, etc.
 
 
-### **2.2 Installation**
+### 2.2 Installation
 To install DHIS2 Analytics Plugin, first obtain the latest stable realese versions from either Github repository or WordPress Plugin repository.
-Github
-Download the latest version from Github repository below
- [https://github.com/Stephocay-Limited/wp-dhis2-analytics/releases/download/1.0.10/dhis_analytics_1.0.10.zip](https://github.com/Stephocay-Limited/wp-dhis2-analytics/releases/download/1.0.10/dhis_analytics_1.0.10.zip)  
 
-WordPress Plugin repository
+#### Github
+Download the latest version from Github repository below
+ [https://github.com/crsorggithub/DHIS2-Wordpress-Plugin/raw/master/dhis_analytics_1.0.10.zip](https://github.com/crsorggithub/DHIS2-Wordpress-Plugin/raw/master/dhis_analytics_1.0.10.zip)  
+
+#### WordPress Plugin repository
 
 Details to be added once it is successfully uploaded into the Wordpress plugin repository.
 Using either options, Go to Plugins management panel:
