@@ -43,16 +43,18 @@ To install DHIS2 Analytics Plugin, first obtain the latest stable realese versio
 Github
 Download the latest version from Github repository below
  [https://github.com/Stephocay-Limited/wp-dhis2-analytics/releases/download/1.0.10/dhis_analytics_1.0.10.zip](https://github.com/Stephocay-Limited/wp-dhis2-analytics/releases/download/1.0.10/dhis_analytics_1.0.10.zip)  
+
 WordPress Plugin repository
-Details to be added once it is successfully uploaded into the wordpress plugin repository.
-Using either options, Go to Plugins management panel
+
+Details to be added once it is successfully uploaded into the Wordpress plugin repository.
+Using either options, Go to Plugins management panel:
 
 ![](2020-02-28/pastedGraphic.png)
 
 Select the option Add New  to add DHIS2 Analytics plugin. You should be able to see the screen below. Here you can decide to upload a zipped file (e.g. wp-dhis-analytics-1.0.10.zip) downloaded from  [Github](https://github.com/Stephocay-Limited/wp-dhis2-analytics/releases/download/1.0.10/dhis_analytics_1.0.10.zip).
 
-You will also be able to search for the plugin directly from WordPress online wordpress repository by typing DHIS2 Analytics in 2 below. Once found, click Install Now Button as in 3. After search, your plugin will be as shown in 3.
-
+You will also be able to search for the plugin directly from WordPress online Wordpress repository by typing DHIS2 Analytics in 2 below. Once found, click Install Now Button as in 3. After search, your plugin will be as shown in 3.
+![](2020-02-28/WP_DHIS2_Analytics_1010_html_3f403b4c945e3735.png)
 
 #### Uploading and installing
 
