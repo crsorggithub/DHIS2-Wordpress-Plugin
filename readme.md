@@ -33,25 +33,10 @@ Before installing DHIS2 Analytics  Plugin within your WordPress Powered website,
 Software | Minimum Requirements
 -------- | --------------------
 WordPress | 1. Disk Space: 1GB+ 
-Version 5.0 + | 2. Web Server: Apache or Nginx
- | 3. Database: MySQL version 5.0.15 or greater or any version of MariaDB.
- | 4. RAM: 512MB+
- | 5. PHP:  Version 7.3 or greater.
- | 6. Processor: 1.0GHz+
-
-
-
-
+Version 5.0 + | 2. Web Server: Apache or Nginx\ 3. Database: MySQL version 5.0.15 or greater or any version of MariaDB.\ 4. RAM: 512MB+\ 5. PHP: Version 7.3 or greater.\ 6. Processor: 1.0GHz+
 DHIS2 Software |
-* Minimum Version:  2.29 +
-* Maxmium Version: 2.33
-**NB**: Later versions after 2.33 have not been tested yet |
-Web Browser |
-* Latest versions of Web browsers.
-	* Google Chrome
-	* Firefox
-	* Opera
-	* Edge, etc.
+* Minimum Version:  2.29 +\ * Maxmium Version: 2.33\ NB: Later versions after 2.33 have not been tested yet
+Web Browser | * Latest versions of Web browsers.\ 	* Google Chrome\  	* Firefox\  	* Opera\  	* Edge, etc.
 
 
 ### **2.2 Installation**
