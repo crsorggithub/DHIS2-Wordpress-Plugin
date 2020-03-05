@@ -226,12 +226,14 @@ DHIS2 Analytics also supports multiple item display. When selected, two display 
    Sometimes, you might want to remove your created DHIS2 Analytics block from your post or page. To achieve this, click on the Block, and click on the block More Options icon.
 
 
-# Plugin developed by:
+## Plugin developed by:
 
 ![](2020-02-28/pastedGraphic%208.png)
 
-Plot 7, Charles Lukwiya Road, Kigumba
-Kiryandongo, Uganda
+Plot 7, Charles Lukwiya Road, Kigumba, Kiryandongo, Uganda
+
 Tel: +256 393 217 892
+
 Email:  [info@stephocay.com](mailto:info@stephocay.com)
+
 Website:  [stephocay.com](https://stephocay.com)  
