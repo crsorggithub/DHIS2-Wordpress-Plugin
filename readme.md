@@ -143,21 +143,41 @@ Maps | Charts | Report Tables | Text | Resources | Unsupported
 ---- | ------ | ------------- | ---- | --------- | -----------
 ![](2020-02-28/image24.png) | ![](2020-02-28/image25.png) | ![](2020-02-28/image26.png) | ![](2020-02-28/image27.png) | ![](2020-02-28/image28.png) | ![](2020-02-28/image29.png)
 
-### **3.2.2 Display Settings**
-By default, the DHIS2 Analytics block is set to single item display. This will allow you only to select one dashboard item from all the dashboards available. In all cases, you can set the display size for the block, by default, it is in Full size  or you can select Custom Size and specify the width and height in Pixels (px)
+NOTES:
+* Maps requires height to be set in px. We have defaulted the height to 440px. If you need custom height, specify in px e.g. 300px.
+* Resources links requires authentication for in this version as it points to DHIS2 instance. If already logged in to the DHIS2, the resources should work automatically.
+* Any item that has the Unsupported icon will not be displayed on the page or post if selected.
 
-####**Single Item Display**
+
+### 3.2.2 Display Settings
+By default, the DHIS2 Analytics block is set to single item display. This will allow you only to select one dashboard item from all the dashboards available. In all cases, you can set the display size for the block, by default, it is in Full size  or you can select Custom Size and specify the width and height in Pixels (px).
+
+#### Single Item Display
 Single Item Display allows you to select only one item at a time. On the right pane, the block settings available for single item display are: _Display Items, Display Size and Enable Caption_
+
+You can switch to Multiple Items to change from Single Item Display and this will allow you to select many items.
+
+![](2020-02-28/image30.png)
 
 Display Size allows you to specify a custom size instead of the default Full Size. If you select Custom size, you will be required to specify Width and Height in pixels as below.
 
-#### **Multiple Items Display**
+![](2020-02-28/image31.png)
+
+Note:
+When providing a value, please remember to add the px characters in the end. .
+For example: 450px and 300px   
+Other supported units include %, vw (widths), vh (heights)
+
+
+#### Multiple Items Display
 DHIS2 Analytics also supports multiple item display. When selected, two display modes Grid and Slideshow displays are provided.
 
-####**Grid Display**
+#### Grid Display
   Grid Display allows you to display selected dashboard items in a grid. You can specify the number of items per row defaulted to 2.  Additionally you specify the custom size by indicating the width and height in pixel.
 
-#### **How to create Grid block**
+![](2020-02-28/image33.png)	
+
+#### How to create Grid block
 1. On the Block Options,
 	a. Under Display Items, select Multiple Items
 	b. Select Grid Display under Display Mode
