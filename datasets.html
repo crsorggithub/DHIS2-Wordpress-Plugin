@@ -1,0 +1,900 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style id="print-dataset" type="text/css">@media screen {
+    body {
+        font-family: "Lato", sans-serif;
+    }
+
+    input.entryfield {
+        width: 60% !important;
+    }
+
+    input.indicator {
+        width: 60% !important;
+    }
+
+    input.dataelementtotal {
+        width: 60% !important;
+    }
+
+    /* Style the tab */
+
+    .tab {
+        float: left;
+        background-color: #d0eBd0;
+        width: 240px;
+        height: 100%;
+    }
+
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 5px 16px;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 15px;
+        border-bottom: 1px solid #a4d2a3;
+        outline: #FFFFFF solid 1px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #669872;
+        color: #ffffff;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+
+        background-color: #669872;
+        color: #ffffff;
+
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        float: left;
+        padding: 0px 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-head td {
+        background-color: #669872;
+    }
+
+    .section-head {
+        color: #FFFFFF;
+        font-size: 15px;
+        margin: 4px;
+        font-weight: bold;
+    }
+
+    .section-subhead td {
+        background-color: #d0eBd0;
+    }
+
+    table,
+    table tr,
+    table tr td {
+        border: 1px solid #a4d2a3;
+    }
+
+    .dataentryform tr:hover {
+        background-color: #D4FEC3;
+    }
+}
+
+@media print{
+    body {
+        font-family: "Lato", sans-serif;
+        font-size: 12px;
+        zoom: 65%;
+    }
+
+    .tab {
+        display: none;
+    }
+
+    .tabcontent {
+        float: left;
+        padding: 0px 0px;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    div.print-block{
+        display:block;
+    }
+
+    table,
+    tr {
+        break-after: avoid;
+        page-break-after: avoid;
+        break-before: avoid;
+        page-break-before: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    table.dataset-content, tr.dataset-content, td.dataset-content{
+        border:0px solid #cccccc;
+    }
+
+    .section-head td {
+        background-color: #454645;
+    }
+
+    .section-head {
+        color: #FFFFFF;
+        font-size: 15px;
+        margin: 4px;
+        font-weight: bold;
+    }
+
+    .section-subhead td {
+        background-color: rgb(190, 190, 190);
+    }
+
+    input.entryfield,
+    .dataelementtotal,
+    .indicator {
+        width: 3.5em !important;
+    }
+
+    #completedByDiv,
+    #infoDiv,
+    div#completenessDiv input,
+    div#completenessDiv span,
+    #fileDeleteConfirmationDialog {
+        display: none;
+    }
+}
+</style>
+<table class="dataset-content" width="100%">
+	<tbody>
+		<tr class="dataset-content">
+			<td class="tab dataset-content" valign="top" width="20%">
+			<div class="tab">
+                <button class="tablinks" id="defaultOpen" onclick="opentab(event.currentTarget, 'tab1')">Integrated Disease Surveillance and Response (IDSR)</button>
+                <button class="tablinks" onclick="opentab(event.currentTarget, 'tab2')">Weekly Summary - Cases and Deaths</button>
+                <button class="tablinks" onclick="opentab(event.currentTarget, 'tab3')">Weekly Summary - OPD, eMTCT, Malaria, TB, Stock, GeneXpert and TPT</button>
+            </div>
+			</td>
+			<td valign="top" class="dataset-content">
+			<div class="tabcontent" id="tab1">
+			<table border="1" class="dataentryform" width="100%">
+				<tbody>
+					<tr class="section-head">
+						<td colspan="6"><b>SELECTED OTHER PRIORITY DISEASES UNDER INTEGRATED DISEASE SURVEILLANCE AND RESPONSES (IDSR)</b></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr class="section-subhead">
+						<td><strong>Diseases/ Conditions</strong></td>
+						<td><strong>Code </strong></td>
+						<td><strong>Cases this week</strong></td>
+						<td><strong>Deaths this week</strong></td>
+						<td><strong>Tested Cases</strong></td>
+						<td><strong>Positive Cases</strong></td>
+					</tr>
+					<tr class="section-subhead">
+						<td colspan="4"><strong>Epidemic Prone Diseases/ Conditions</strong></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>EPO1. Chikungunya</td>
+						<td><strong>CG</strong></td>
+						<td><input id="tmQu1Cj3fGA-HllvX50cXC0-val" name="entryfield" title="033B-EP01a. Chikungunya  - Cases" value="[ 033B-EP01a. Chikungunya  - Cases ]" /></td>
+						<td><input id="VoSw3fI4KyA-HllvX50cXC0-val" name="entryfield" title="033B-EP01b. Chikungunya  - Deaths" value="[ 033B-EP01b. Chikungunya  - Deaths ]" /></td>
+						<td><input id="WomwUxNf0tN-HllvX50cXC0-val" name="entryfield" title="033B-EP01c. Chikungunya  - Tested Cases" value="[ 033B-EP01c. Chikungunya  - Tested Cases ]" /></td>
+						<td><input id="xO5vaUghW0w-HllvX50cXC0-val" name="entryfield" title="033B-EP01d. Chikungunya  - Positive Cases" value="[ 033B-EP01d. Chikungunya  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>EP02. Dengue</td>
+						<td><strong>DG</strong></td>
+						<td><input id="gmlHXYSmQSh-HllvX50cXC0-val" name="entryfield" title="033B-EP02a. Dengue  - Cases" value="[ 033B-EP02a. Dengue  - Cases ]" /></td>
+						<td><input id="UxdBlLBgs7F-HllvX50cXC0-val" name="entryfield" title="033B-EP02b. Dengue  - Deaths" value="[ 033B-EP02b. Dengue  - Deaths ]" /></td>
+						<td><input id="wYxBz4p5d5X-HllvX50cXC0-val" name="entryfield" title="033B-EP02c. Dengue  - Tested Cases" value="[ 033B-EP02c. Dengue  - Tested Cases ]" /></td>
+						<td><input id="tm9e1rHaaKX-HllvX50cXC0-val" name="entryfield" title="033B-EP02d. Dengue  - Positive Cases" value="[ 033B-EP02d. Dengue  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>EP03. Influenza-like illness</td>
+						<td><strong>IL</strong></td>
+						<td><input id="nuZeHkDfuay-HllvX50cXC0-val" name="entryfield" title="033B-EP03a. Influenza like illness - Cases" value="[ 033B-EP03a. Influenza like illness - Cases ]" /></td>
+						<td><input id="AbykqmBJSVM-HllvX50cXC0-val" name="entryfield" title="033B-EP03b. Influenza like illness - Deaths" value="[ 033B-EP03b. Influenza like illness - Deaths ]" /></td>
+						<td><input id="Dc8L3OlZnop-HllvX50cXC0-val" name="entryfield" title="033B-EP03c. Influenza like illness - Tested Cases" value="[ 033B-EP03c. Influenza like illness - Tested Cases ]" /></td>
+						<td><input id="fPNuh5yE3zQ-HllvX50cXC0-val" name="entryfield" title="033B-EP03d. Influenza like illness - Positive Cases" value="[ 033B-EP03d. Influenza like illness - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>EP04. Acute viral hepatitis</td>
+						<td><strong>HP</strong></td>
+						<td><input id="PFsQquUC9iA-HllvX50cXC0-val" name="entryfield" title="033B-EP04a. Acute viral hepatitis  - Cases" value="[ 033B-EP04a. Acute viral hepatitis  - Cases ]" /></td>
+						<td><input id="XKbzk0fxykF-HllvX50cXC0-val" name="entryfield" title="033B-EP04b. Acute viral hepatitis  - Deaths" value="[ 033B-EP04b. Acute viral hepatitis  - Deaths ]" /></td>
+						<td><input id="MPmVdTjMsGD-HllvX50cXC0-val" name="entryfield" title="033B-EP04c. Acute viral hepatitis  - Tested Cases" value="[ 033B-EP04c. Acute viral hepatitis  - Tested Cases ]" /></td>
+						<td><input id="s7tpauXRlsP-HllvX50cXC0-val" name="entryfield" title="033B-EP04d. Acute viral hepatitis  - Positive Cases" value="[ 033B-EP04d. Acute viral hepatitis  - Positive Cases ]" /></td>
+					</tr>
+					<tr class="section-subhead">
+						<td colspan="4"><strong>Diseases/conditions targeted for elimination or eradication</strong></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>TE01. Dracunculiasis</td>
+						<td>DC</td>
+						<td><input id="tGX0Br8ZlCc-HllvX50cXC0-val" name="entryfield" title="033B-TE01a. Dracunculiasis  - Cases" value="[ 033B-TE01a. Dracunculiasis  - Cases ]" /></td>
+						<td><input id="nJmDIG1TEfq-HllvX50cXC0-val" name="entryfield" title="033B-TE01b. Dracunculiasis  - Deaths" value="[ 033B-TE01b. Dracunculiasis  - Deaths ]" /></td>
+						<td><input id="uuecehXSUOq-HllvX50cXC0-val" name="entryfield" title="033B-TE01c. Dracunculiasis  - Tested Cases" value="[ 033B-TE01c. Dracunculiasis  - Tested Cases ]" /></td>
+						<td><input id="rMrmA2U6zO6-HllvX50cXC0-val" name="entryfield" title="033B-TE01d. Dracunculiasis  - Positive Cases" value="[ 033B-TE01d. Dracunculiasis  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>TE02. Onchocerciasis</td>
+						<td>OC</td>
+						<td><input id="UkWk90CglOi-HllvX50cXC0-val" name="entryfield" title="033B-TE02a. Onchocerciasis  - Cases" value="[ 033B-TE02a. Onchocerciasis  - Cases ]" /></td>
+						<td><input id="lsHVNhrMhhI-HllvX50cXC0-val" name="entryfield" title="033B-TE02b. Onchocerciasis  - Deaths" value="[ 033B-TE02b. Onchocerciasis  - Deaths ]" /></td>
+						<td><input id="r7abnHnISUP-HllvX50cXC0-val" name="entryfield" title="033B-TE02c. Onchocerciasis  - Tested Cases" value="[ 033B-TE02c. Onchocerciasis  - Tested Cases ]" /></td>
+						<td><input id="Bi2G2RMmwDF-HllvX50cXC0-val" name="entryfield" title="033B-TE02d. Onchocerciasis  - Positive Cases" value="[ 033B-TE02d. Onchocerciasis  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>TE03. Buruli ulcer</td>
+						<td>BU</td>
+						<td><input id="yRi9CccboAs-HllvX50cXC0-val" name="entryfield" title="033B-TE03a. Buruli ulcer  - Cases" value="[ 033B-TE03a. Buruli ulcer  - Cases ]" /></td>
+						<td><input id="pOMtp7vsg8e-HllvX50cXC0-val" name="entryfield" title="033B-TE03b. Buruli ulcer  - Deaths" value="[ 033B-TE03b. Buruli ulcer  - Deaths ]" /></td>
+						<td><input id="gUQ4nhxRnQx-HllvX50cXC0-val" name="entryfield" title="033B-TE03c. Buruli ulcer  - Tested Cases" value="[ 033B-TE03c. Buruli ulcer  - Tested Cases ]" /></td>
+						<td><input id="rMIqcVO1zOD-HllvX50cXC0-val" name="entryfield" title="033B-TE03d. Buruli ulcer  - Positive Cases" value="[ 033B-TE03d. Buruli ulcer  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>TE04. Lymphatic Filariasis</td>
+						<td>LF</td>
+						<td><input id="j7exdRFjWgL-HllvX50cXC0-val" name="entryfield" title="033B-TE04a. Lymphatic Filariasis  - Cases" value="[ 033B-TE04a. Lymphatic Filariasis  - Cases ]" /></td>
+						<td><input id="tTmPOEn3zEq-HllvX50cXC0-val" name="entryfield" title="033B-TE04b. Lymphatic Filariasis  - Deaths" value="[ 033B-TE04b. Lymphatic Filariasis  - Deaths ]" /></td>
+						<td><input id="daELOelkUy8-HllvX50cXC0-val" name="entryfield" title="033B-TE04c. Lymphatic Filariasis  - Tested Cases" value="[ 033B-TE04c. Lymphatic Filariasis  - Tested Cases ]" /></td>
+						<td><input id="nB5h9YbgxUu-HllvX50cXC0-val" name="entryfield" title="033B-TE04d. Lymphatic Filariasis  - Positive Cases" value="[ 033B-TE04d. Lymphatic Filariasis  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>TE05. Noma</td>
+						<td>NO</td>
+						<td><input id="tXrFA6zuO8P-HllvX50cXC0-val" name="entryfield" title="033B-TE05a. Noma  - Cases" value="[ 033B-TE05a. Noma  - Cases ]" /></td>
+						<td><input id="VzIcb7v9ogD-HllvX50cXC0-val" name="entryfield" title="033B-TE05b. Noma  - Deaths" value="[ 033B-TE05b. Noma  - Deaths ]" /></td>
+						<td><input id="tcBajrmXTTB-HllvX50cXC0-val" name="entryfield" title="033B-TE05c. Noma  - Tested Cases" value="[ 033B-TE05c. Noma  - Tested Cases ]" /></td>
+						<td><input id="dNNgbFpX9HE-HllvX50cXC0-val" name="entryfield" title="033B-TE05d. Noma  - Positive Cases" value="[ 033B-TE05d. Noma  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>TE06. Human influenza due to a new subtype</td>
+						<td>HN</td>
+						<td><input id="ydsA3TSmv18-HllvX50cXC0-val" name="entryfield" title="033B-TE06a. Human influenza due to a new subtype  - Cases" value="[ 033B-TE06a. Human influenza due to a new subtype  - Cases ]" /></td>
+						<td><input id="tKghBu3CSmO-HllvX50cXC0-val" name="entryfield" title="033B-TE06b. Human influenza due to a new subtype  - Deaths" value="[ 033B-TE06b. Human influenza due to a new subtype  - Deaths ]" /></td>
+						<td><input id="AbaaBYruy24-HllvX50cXC0-val" name="entryfield" title="033B-TE06c. Human influenza due to a new subtype  - Tested Cases" value="[ 033B-TE06c. Human influenza due to a new subtype  - Tested Cases ]" /></td>
+						<td><input id="ZGzz4R0vcE0-HllvX50cXC0-val" name="entryfield" title="033B-TE06d. Human influenza due to a new subtype  - Positive Cases" value="[ 033B-TE06d. Human influenza due to a new subtype  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>TE07. Severe Acute Respiratory Syndrome (SARS)</td>
+						<td>SS</td>
+						<td><input id="YbjlDGrpFct-HllvX50cXC0-val" name="entryfield" title="033B-TE07a. Severe Acute Respiratory Syndrome (SARS) - Cases" value="[ 033B-TE07a. Severe Acute Respiratory Syndrome (SARS) - Cases ]" /></td>
+						<td><input id="dOUDKCXAlkQ-HllvX50cXC0-val" name="entryfield" title="033B-TE07b. Severe Acute Respiratory Syndrome (SARS)  - Deaths" value="[ 033B-TE07b. Severe Acute Respiratory Syndrome (SARS)  - Deaths ]" /></td>
+						<td><input id="kCEcodH6uyf-HllvX50cXC0-val" name="entryfield" title="033B-TE07c. Severe Acute Respiratory Syndrome (SARS) - Tested Cases" value="[ 033B-TE07c. Severe Acute Respiratory Syndrome (SARS) - Tested Cases ]" /></td>
+						<td><input id="gIl35aQeBsB-HllvX50cXC0-val" name="entryfield" title="033B-TE07d. Severe Acute Respiratory Syndrome (SARS) - Positive Cases" value="[ 033B-TE07d. Severe Acute Respiratory Syndrome (SARS) - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>TE08. Smallpox</td>
+						<td>SP</td>
+						<td><input id="bnkwVfOFDpd-HllvX50cXC0-val" name="entryfield" title="033B-TE08a. Smallpox  - Cases" value="[ 033B-TE08a. Smallpox  - Cases ]" /></td>
+						<td><input id="rsRSgznnCDG-HllvX50cXC0-val" name="entryfield" title="033B-TE08b. Smallpox  - Deaths" value="[ 033B-TE08b. Smallpox  - Deaths ]" /></td>
+						<td><input id="FKBDpc8KNrz-HllvX50cXC0-val" name="entryfield" title="033B-TE08c. Smallpox  - Tested Cases" value="[ 033B-TE08c. Smallpox  - Tested Cases ]" /></td>
+						<td><input id="MpuzWhZey1m-HllvX50cXC0-val" name="entryfield" title="033B-TE08d. Smallpox  - Positive Cases" value="[ 033B-TE08d. Smallpox  - Positive Cases ]" /></td>
+					</tr>
+					<tr class="section-subhead">
+						<td colspan="4"><strong>Disease of public health importance</strong></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>HI01. Diarrhoea with dehydration &lt;5</td>
+						<td>DD</td>
+						<td><input id="RfixCHVUdXe-HllvX50cXC0-val" name="entryfield" title="033B-HI01a. Diarrhoea with dehydration &lt;5  - Cases" value="[ 033B-HI01a. Diarrhoea with dehydration &lt;5  - Cases ]" /></td>
+						<td><input id="xECOmwMTL2v-HllvX50cXC0-val" name="entryfield" title="033B-HI01b. Diarrhoea with dehydration &lt;5  - Deaths" value="[ 033B-HI01b. Diarrhoea with dehydration &lt;5  - Deaths ]" /></td>
+						<td><input id="CpSfJhYNElO-HllvX50cXC0-val" name="entryfield" title="033B-HI01c. Diarrhoea with dehydration &lt;5  - Tested Cases" value="[ 033B-HI01c. Diarrhoea with dehydration &lt;5  - Tested Cases ]" /></td>
+						<td><input id="jwWsooJYoc2-HllvX50cXC0-val" name="entryfield" title="033B-HI01d. Diarrhoea with dehydration &lt;5  - Positive Cases" value="[ 033B-HI01d. Diarrhoea with dehydration &lt;5  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>HI02. Severe pneumonia &lt;5</td>
+						<td>PN</td>
+						<td><input id="tsJBUFW2Vjm-HllvX50cXC0-val" name="entryfield" title="033B-HI02a. Severe pneumonia &lt;5  - Cases" value="[ 033B-HI02a. Severe pneumonia &lt;5  - Cases ]" /></td>
+						<td><input id="hEvz6VY4COC-HllvX50cXC0-val" name="entryfield" title="033B-HI02b. Severe pneumonia &lt;5  - Deaths" value="[ 033B-HI02b. Severe pneumonia &lt;5  - Deaths ]" /></td>
+						<td><input id="acptccbxOOc-HllvX50cXC0-val" name="entryfield" title="033B-HI02c. Severe pneumonia &lt;5  - Tested Cases" value="[ 033B-HI02c. Severe pneumonia &lt;5  - Tested Cases ]" /></td>
+						<td><input id="EOIGhVK6KIN-HllvX50cXC0-val" name="entryfield" title="033B-HI02d. Severe pneumonia &lt;5  - Positive Cases" value="[ 033B-HI02d. Severe pneumonia &lt;5  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>HI03. Human African Trypanosomiasis</td>
+						<td>TX</td>
+						<td><input id="WyzgqD4h6iX-HllvX50cXC0-val" name="entryfield" title="033B-HI03a. Human African Trypanosomiasis  - Cases" value="[ 033B-HI03a. Human African Trypanosomiasis  - Cases ]" /></td>
+						<td><input id="FkGVLorWpy5-HllvX50cXC0-val" name="entryfield" title="033B-HI03b. Human African Trypanosomiasis  - Deaths" value="[ 033B-HI03b. Human African Trypanosomiasis  - Deaths ]" /></td>
+						<td><input id="iiH8zHPLzUw-HllvX50cXC0-val" name="entryfield" title="033B-HI03c. Human African Trypanosomiasis  - Tested Cases" value="[ 033B-HI03c. Human African Trypanosomiasis  - Tested Cases ]" /></td>
+						<td><input id="SlTLufgWBGd-HllvX50cXC0-val" name="entryfield" title="033B-HI03d. Human African Trypanosomiasis  - Positive Cases" value="[ 033B-HI03d. Human African Trypanosomiasis  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>HI04. Trachoma</td>
+						<td>TR</td>
+						<td><input id="sDlAyujuz4E-HllvX50cXC0-val" name="entryfield" title="033B-HI04a. Trachoma  - Cases" value="[ 033B-HI04a. Trachoma  - Cases ]" /></td>
+						<td><input id="pqkuL11VuFt-HllvX50cXC0-val" name="entryfield" title="033B-HI04b. Trachoma  - Deaths" value="[ 033B-HI04b. Trachoma  - Deaths ]" /></td>
+						<td><input id="sggjRm2Ua6K-HllvX50cXC0-val" name="entryfield" title="033B-HI04c. Trachoma  - Tested Cases" value="[ 033B-HI04c. Trachoma  - Tested Cases ]" /></td>
+						<td><input id="oaCE3iLIM6E-HllvX50cXC0-val" name="entryfield" title="033B-HI04d. Trachoma  - Positive Cases" value="[ 033B-HI04d. Trachoma  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>HI05. Schistosomiasis</td>
+						<td>SC</td>
+						<td><input id="dvsdLqzIndf-HllvX50cXC0-val" name="entryfield" title="033B-HI05a. Schistosomiasis  - Cases" value="[ 033B-HI05a. Schistosomiasis  - Cases ]" /></td>
+						<td><input id="miQDSm7cMQy-HllvX50cXC0-val" name="entryfield" title="033B-HI05b. Schistosomiasis  - Deaths" value="[ 033B-HI05b. Schistosomiasis  - Deaths ]" /></td>
+						<td><input id="OI4dso2xKhO-HllvX50cXC0-val" name="entryfield" title="033B-HI05c. Schistosomiasis  - Tested Cases" value="[ 033B-HI05c. Schistosomiasis  - Tested Cases ]" /></td>
+						<td><input id="sd11kZSVBdj-HllvX50cXC0-val" name="entryfield" title="033B-HI05d. Schistosomiasis  - Tested Cases" value="[ 033B-HI05d. Schistosomiasis  - Tested Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>HI06.Diphtheria</td>
+						<td>DP</td>
+						<td><input id="JkK2hLwIkJL-HllvX50cXC0-val" name="entryfield" title="033B-HI06a. Diphtheria  - Cases" value="[ 033B-HI06a. Diphtheria  - Cases ]" /></td>
+						<td><input id="aWFzTtqsA8B-HllvX50cXC0-val" name="entryfield" title="033B-HI06b. Diphtheria  - Deaths" value="[ 033B-HI06b. Diphtheria  - Deaths ]" /></td>
+						<td><input id="Hh3V2XAlA8y-HllvX50cXC0-val" name="entryfield" title="033B-HI06c. Diphtheria  - Tested Cases" value="[ 033B-HI06c. Diphtheria  - Tested Cases ]" /></td>
+						<td><input id="BMHKLmRrq3K-HllvX50cXC0-val" name="entryfield" title="033B-HI06d. Diphtheria  - Positive Cases" value="[ 033B-HI06d. Diphtheria  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>HI07. Pertussis (Whooping cough)</td>
+						<td>WC</td>
+						<td><input id="nNjyMm5aSCL-HllvX50cXC0-val" name="entryfield" title="033B-HI07a. Pertussis (Whooping cough) - Cases" value="[ 033B-HI07a. Pertussis (Whooping cough) - Cases ]" /></td>
+						<td><input id="OPGwcWWIpsm-HllvX50cXC0-val" name="entryfield" title="033B-HI07b. Pertussis (Whooping cough) - Deaths" value="[ 033B-HI07b. Pertussis (Whooping cough) - Deaths ]" /></td>
+						<td><input id="dqd2XIyfc3a-HllvX50cXC0-val" name="entryfield" title="033B-HI07c. Pertussis (Whooping cough) - Tested Cases" value="[ 033B-HI07c. Pertussis (Whooping cough) - Tested Cases ]" /></td>
+						<td><input id="Xpkj45OCx9q-HllvX50cXC0-val" name="entryfield" title="033B-HI07d. Pertussis (Whooping cough) - Positive Cases" value="[ 033B-HI07d. Pertussis (Whooping cough) - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>HI08. Brucellosis</td>
+						<td>BC</td>
+						<td><input id="Br0qzZuYL4Y-HllvX50cXC0-val" name="entryfield" title="033B-HI08a. Brucellosis  - Cases" value="[ 033B-HI08a. Brucellosis  - Cases ]" /></td>
+						<td><input id="iUe5rxZas9V-HllvX50cXC0-val" name="entryfield" title="033B-HI08b. Brucellosis  - Deaths" value="[ 033B-HI08b. Brucellosis  - Deaths ]" /></td>
+						<td><input id="D7kqLgfp1gH-HllvX50cXC0-val" name="entryfield" title="033B-HI08c. Brucellosis  - Tested Cases" value="[ 033B-HI08c. Brucellosis  - Tested Cases ]" /></td>
+						<td><input id="O5uOUmOa3IJ-HllvX50cXC0-val" name="entryfield" title="033B-HI08d. Brucellosis  - Positive Cases" value="[ 033B-HI08d. Brucellosis  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>HI09. Kala azar</td>
+						<td>KA</td>
+						<td><input id="vMPfDX62sid-HllvX50cXC0-val" name="entryfield" title="033B-HI09a. Kala azar  - Cases" value="[ 033B-HI09a. Kala azar  - Cases ]" /></td>
+						<td><input id="LqRyClzqulL-HllvX50cXC0-val" name="entryfield" title="033B-HI09b. Kala azar  - Deaths" value="[ 033B-HI09b. Kala azar  - Deaths ]" /></td>
+						<td><input id="fsvVaAlZsxP-HllvX50cXC0-val" name="entryfield" title="033B-HI09c. Kala azar  - Tested Cases" value="[ 033B-HI09c. Kala azar  - Tested Cases ]" /></td>
+						<td><input id="R8DFkZc5mRP-HllvX50cXC0-val" name="entryfield" title="033B-HI09d. Kala azar  - Positive Cases" value="[ 033B-HI09d. Kala azar  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>HI10. Nodding Syndrome</td>
+						<td>NS</td>
+						<td><input id="xSnQySOjAUg-HllvX50cXC0-val" name="entryfield" title="033B-HI10a. Nodding Syndrome  - Cases" value="[ 033B-HI10a. Nodding Syndrome  - Cases ]" /></td>
+						<td><input id="yzLNpQAvTbg-HllvX50cXC0-val" name="entryfield" title="033B-HI10b. Nodding Syndrome  - Deaths" value="[ 033B-HI10b. Nodding Syndrome  - Deaths ]" /></td>
+						<td><input id="fQv8FKRB8m2-HllvX50cXC0-val" name="entryfield" title="033B-HI10c. Nodding Syndrome  - Tested Cases" value="[ 033B-HI10c. Nodding Syndrome  - Tested Cases ]" /></td>
+						<td><input id="L9bybfdYauH-HllvX50cXC0-val" name="entryfield" title="033B-HI10d. Nodding Syndrome  - Positive Cases" value="[ 033B-HI10d. Nodding Syndrome  - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>HI11. Adverse Drug Reactions (ADR)</td>
+						<td>AR</td>
+						<td><input id="TbVgKiUCG0Z-HllvX50cXC0-val" name="entryfield" title="033B-HI11a. Adverse Drug Reactions (ADR) - Cases" value="[ 033B-HI11a. Adverse Drug Reactions (ADR) - Cases ]" /></td>
+						<td><input id="yWgrg3btgEk-HllvX50cXC0-val" name="entryfield" title="033B-HI11b. Adverse Drug Reactions (ADR) - Deaths" value="[ 033B-HI11b. Adverse Drug Reactions (ADR) - Deaths ]" /></td>
+						<td><input id="SmyqybZqzi2-HllvX50cXC0-val" name="entryfield" title="033B-HI11c. Adverse Drug Reactions (ADR) - Tested Cases" value="[ 033B-HI11c. Adverse Drug Reactions (ADR) - Tested Cases ]" /></td>
+						<td><input id="ON9OFsL23OG-HllvX50cXC0-val" name="entryfield" title="033B-HI11d. Adverse Drug Reactions (ADR) - Positive Cases" value="[ 033B-HI11d. Adverse Drug Reactions (ADR) - Positive Cases ]" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<div class="tabcontent" id="tab2">
+			<table border="1" class="dataentryform" width="100%">
+				<tbody>
+					<tr class="section-head">
+						<td colspan="7"><strong>CASES AND DEATHS THIS WEEK</strong></td>
+					</tr>
+					<tr class="section-subhead">
+						<td colspan="2"><strong>Cases</strong></td>
+						<td><strong>Code</strong></td>
+						<td><strong>1. Total Cases this week</strong></td>
+						<td><strong>2. Total Death this week</strong></td>
+						<td><strong>Tested Cases</strong></td>
+						<td><strong>Positive Cases</strong></td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>CD01. Malaria (diagnosed)</td>
+						<td><strong>MA.</strong></td>
+						<td><input id="fUflbWWhouR-HllvX50cXC0-val" name="entryfield" title="033B-CD01a. Malaria (diagnosed)  - Cases" value="[ 033B-CD01a. Malaria (diagnosed)  - Cases ]" /></td>
+						<td><input id="IoZCByEDSnX-HllvX50cXC0-val" name="entryfield" title="033B-CD01b. Malaria (diagnosed) - Deaths" value="[ 033B-CD01b. Malaria (diagnosed) - Deaths ]" /></td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>CD02. Dysentery</td>
+						<td><strong>DY.</strong></td>
+						<td><input id="ZQmTt0upgBM-HllvX50cXC0-val" name="entryfield" title="033B-CD02a. Dysentery  - Cases" value="[ 033B-CD02a. Dysentery  - Cases ]" /></td>
+						<td><input id="iM32PqLmIPa-HllvX50cXC0-val" name="entryfield" title="033B-CD02b. Dysentery - Deaths" value="[ 033B-CD02b. Dysentery - Deaths ]" /></td>
+						<td><input id="rzSFCvmrRwn-HllvX50cXC0-val" name="entryfield" title="033B-CD02c. Dysentery - Cases Tested" value="[ 033B-CD02c. Dysentery - Cases Tested ]" /></td>
+						<td><input id="RzUaghcvGw9-HllvX50cXC0-val" name="entryfield" title="033B-CD02d. Dysentery - Cases Positive" value="[ 033B-CD02d. Dysentery - Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>CD03. Severe Acute Respiratory Infection (SARI)</td>
+						<td><strong>SA.</strong></td>
+						<td><input id="x9hL91WN0vj-HllvX50cXC0-val" name="entryfield" title="033B-CD03a. SARI - Cases" value="[ 033B-CD03a. SARI - Cases ]" /></td>
+						<td><input id="mDQF18xh8e5-HllvX50cXC0-val" name="entryfield" title="033B-CD03b. SARI- Deaths" value="[ 033B-CD03b. SARI- Deaths ]" /></td>
+						<td><input id="Yaythx5zYjq-HllvX50cXC0-val" name="entryfield" title="033B-CD03c. SARI- Cases Tested" value="[ 033B-CD03c. SARI- Cases Tested ]" /></td>
+						<td><input id="F6fgjqUBZkQ-HllvX50cXC0-val" name="entryfield" title="033B-CD03d. SARI- Cases Positive" value="[ 033B-CD03d. SARI- Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>CD04. Acute Flaccid Paralysis</td>
+						<td><strong>AF.</strong></td>
+						<td><input id="G0a07K7yIiz-HllvX50cXC0-val" name="entryfield" title="033B-CD04a. Acute Flaccid Paralysis - Cases" value="[ 033B-CD04a. Acute Flaccid Paralysis - Cases ]" /></td>
+						<td><input id="y16wdRU3yZT-HllvX50cXC0-val" name="entryfield" title="033B-CD04b. Acute Flaccid Paralysis- Deaths" value="[ 033B-CD04b. Acute Flaccid Paralysis- Deaths ]" /></td>
+						<td><input id="L9aDTKUC2mW-HllvX50cXC0-val" name="entryfield" title="033B-CD04c. Acute Flaccid Paral.- Cases Tested" value="[ 033B-CD04c. Acute Flaccid Paral.- Cases Tested ]" /></td>
+						<td><input id="HR1HnSpAUqi-HllvX50cXC0-val" name="entryfield" title="033B-CD04d. Acute Flaccid Paral.- Cases Positive" value="[ 033B-CD04d. Acute Flaccid Paral.- Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>CD05. Adverse Events Following Immunization (AEFI)</td>
+						<td><strong>AE.</strong></td>
+						<td><input id="NbGDpZZsZK1-HllvX50cXC0-val" name="entryfield" title="033B-CD05a. AEFI - Cases" value="[ 033B-CD05a. AEFI - Cases ]" /></td>
+						<td><input id="dnZMDpYRS3s-HllvX50cXC0-val" name="entryfield" title="033B-CD05b. AEFI- Deaths" value="[ 033B-CD05b. AEFI- Deaths ]" /></td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>CD06. Animal Bites (suspected rabies)</td>
+						<td><strong>AB.</strong></td>
+						<td><input id="x1s0nL3MSul-HllvX50cXC0-val" name="entryfield" title="033B-CD06a. Animal bites(Suspected rabies) - Cases" value="[ 033B-CD06a. Animal bites(Suspected rabies) - Cases ]" /></td>
+						<td><input id="xYeHFEb3RLZ-HllvX50cXC0-val" name="entryfield" title="033B-CD06b. Animal bites(Suspected rabies) - Deaths" value="[ 033B-CD06b. Animal bites(Suspected rabies) - Deaths ]" /></td>
+						<td><input id="WbxioDESZbd-HllvX50cXC0-val" name="entryfield" title="033B-CD06c. Animal bites(Suspected rabies) - Cases Tested" value="[ 033B-CD06c. Animal bites(Suspected rabies) - Cases Tested ]" /></td>
+						<td><input id="t4B4graqzoK-HllvX50cXC0-val" name="entryfield" title="033B-CD06d. Animal bites(Suspected rabies) - Cases Positive" value="[ 033B-CD06d. Animal bites(Suspected rabies) - Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>CD07. Bacterial Meningitis</td>
+						<td><strong>MG.</strong></td>
+						<td><input id="XBbLDaPUHDE-HllvX50cXC0-val" name="entryfield" title="033B-CD07a. Bacterial Meningitis  - Cases" value="[ 033B-CD07a. Bacterial Meningitis  - Cases ]" /></td>
+						<td><input id="XbHJTtW2aHJ-HllvX50cXC0-val" name="entryfield" title="033B-CD07b. Bacterial Meningitis - Deaths" value="[ 033B-CD07b. Bacterial Meningitis - Deaths ]" /></td>
+						<td><input id="Gnzi6A9vt7n-HllvX50cXC0-val" name="entryfield" title="033B-CD07c. Bacterial Meningitis - Cases Tested" value="[ 033B-CD07c. Bacterial Meningitis - Cases Tested ]" /></td>
+						<td><input id="LwoLLFw8ETj-HllvX50cXC0-val" name="entryfield" title="033B-CD07d. Bacterial Meningitis - Cases Positive" value="[ 033B-CD07d. Bacterial Meningitis - Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>CD08. Cholera</td>
+						<td><strong>CH.</strong></td>
+						<td><input id="ubwCmJrLeYS-HllvX50cXC0-val" name="entryfield" title="033B-CD08a. Cholera  - Cases" value="[ 033B-CD08a. Cholera  - Cases ]" /></td>
+						<td><input id="JnZ8l97OaX6-HllvX50cXC0-val" name="entryfield" title="033B-CD08b. Cholera - Deaths" value="[ 033B-CD08b. Cholera - Deaths ]" /></td>
+						<td><input id="U9ZLdeap9L3-HllvX50cXC0-val" name="entryfield" title="033B-CD08c. Cholera - Cases Tested" value="[ 033B-CD08c. Cholera - Cases Tested ]" /></td>
+						<td><input id="KyepbX7kqr5-HllvX50cXC0-val" name="entryfield" title="033B-CD08d. Cholera - Cases Positive" value="[ 033B-CD08d. Cholera - Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>CD09. Guinea Worm</td>
+						<td><strong>GW.</strong></td>
+						<td><input id="q59K4b6GxZ2-HllvX50cXC0-val" name="entryfield" title="033B-CD09a. Guinea Worm - Cases" value="[ 033B-CD09a. Guinea Worm - Cases ]" /></td>
+						<td><input id="aKd7RJ6BHGK-HllvX50cXC0-val" name="entryfield" title="033B-CD09b. Guinea Worm- Deaths" value="[ 033B-CD09b. Guinea Worm- Deaths ]" /></td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>CD10. Measles</td>
+						<td><strong>ME.</strong></td>
+						<td><input id="i95TwhRjO0m-HllvX50cXC0-val" name="entryfield" title="033B-CD10a. Measles - Cases" value="[ 033B-CD10a. Measles - Cases ]" /></td>
+						<td><input id="SILyHPYY8Lx-HllvX50cXC0-val" name="entryfield" title="033B-CD10b. Measles- Deaths" value="[ 033B-CD10b. Measles- Deaths ]" /></td>
+						<td><input id="waneN6D3Cka-HllvX50cXC0-val" name="entryfield" title="033B-CD10c. Measles- Cases Tested" value="[ 033B-CD10c. Measles- Cases Tested ]" /></td>
+						<td><input id="Me90RXU0VpZ-HllvX50cXC0-val" name="entryfield" title="033B-CD10d. Measles- Cases Positive" value="[ 033B-CD10d. Measles- Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>CD11. Neonatal tetanus</td>
+						<td><strong>NT.</strong></td>
+						<td><input id="gfHE12yjG0D-HllvX50cXC0-val" name="entryfield" title="033B-CD11a. Neonatal tetanus - Cases" value="[ 033B-CD11a. Neonatal tetanus - Cases ]" /></td>
+						<td><input id="QEixGrXMCME-HllvX50cXC0-val" name="entryfield" title="033B-CD11b. Neonatal tetanus- Deaths" value="[ 033B-CD11b. Neonatal tetanus- Deaths ]" /></td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>CD12. Plague</td>
+						<td><strong>PL.</strong></td>
+						<td><input id="T2jqxyBKDnx-HllvX50cXC0-val" name="entryfield" title="033B-CD12a. Plague - Cases" value="[ 033B-CD12a. Plague - Cases ]" /></td>
+						<td><input id="qYpVdbiy7Jd-HllvX50cXC0-val" name="entryfield" title="033B-CD12b. Plague- Deaths" value="[ 033B-CD12b. Plague- Deaths ]" /></td>
+						<td><input id="PrIMLsHU1tZ-HllvX50cXC0-val" name="entryfield" title="033B-CD12c. Plague- Cases Tested" value="[ 033B-CD12c. Plague- Cases Tested ]" /></td>
+						<td><input id="Ab39QXxYk9A-HllvX50cXC0-val" name="entryfield" title="033B-CD12d. Plague- Cases Positive" value="[ 033B-CD12d. Plague- Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>CD13. Typhoid Fever</td>
+						<td><strong>TF.</strong></td>
+						<td><input id="gbnqdojUwmC-HllvX50cXC0-val" name="entryfield" title="033B-CD13a. Typhoid Fever - Cases" value="[ 033B-CD13a. Typhoid Fever - Cases ]" /></td>
+						<td><input id="R9hdJy42eBV-HllvX50cXC0-val" name="entryfield" title="033B-CD13b. Typhoid Fever- Deaths" value="[ 033B-CD13b. Typhoid Fever- Deaths ]" /></td>
+						<td><input id="TFh0fDjYkQT-HllvX50cXC0-val" name="entryfield" title="033B-CD13c. Typhoid Fever- Cases Tested" value="[ 033B-CD13c. Typhoid Fever- Cases Tested ]" /></td>
+						<td><input id="nftzK6gpPu6-HllvX50cXC0-val" name="entryfield" title="033B-CD13d. Typhoid Fever- Cases Positive" value="[ 033B-CD13d. Typhoid Fever- Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td>CD14. Hepatitis B</td>
+						<td><strong>HB.</strong></td>
+						<td><input id="SCMXiy6UHUr-HllvX50cXC0-val" name="entryfield" title="033B-CD14a. Hepatitis B - Cases" value="[ 033B-CD14a. Hepatitis B - Cases ]" /></td>
+						<td><input id="IutSK3p5cX4-HllvX50cXC0-val" name="entryfield" title="033B-CD14b. Hepatitis B- Deaths" value="[ 033B-CD14b. Hepatitis B- Deaths ]" /></td>
+						<td><input id="EOy5kEQFwNn-HllvX50cXC0-val" name="entryfield" title="033B-CD14c. Hepatitis B- Cases Tested" value="[ 033B-CD14c. Hepatitis B- Cases Tested ]" /></td>
+						<td><input id="kQa2BbMdrhr-HllvX50cXC0-val" name="entryfield" title="033B-CD14d. Hepatitis B- Cases Positive" value="[ 033B-CD14d. Hepatitis B- Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>CD15. Rifampicin resistant TB cases</td>
+						<td><strong>DR.</strong></td>
+						<td><input id="PO7x1h7z1Xs-HllvX50cXC0-val" name="entryfield" title="033B-CD15a. RR TB cases - Cases" value="[ 033B-CD15a. RR TB cases - Cases ]" /></td>
+						<td><input id="VBWvpVML6O6-HllvX50cXC0-val" name="entryfield" title="033B-CD15b. RR TB - Deaths" value="[ 033B-CD15b. RR TB - Deaths ]" /></td>
+						<td><input id="c0ntOS3zbsw-HllvX50cXC0-val" name="entryfield" title="033B-CD15c. RR TB cases- Cases Tested" value="[ 033B-CD15c. RR TB cases- Cases Tested ]" /></td>
+						<td><input id="h5pDSkJBKfI-HllvX50cXC0-val" name="entryfield" title="033B-CD15d. RR TB cases- Cases Positive" value="[ 033B-CD15d. RR TB cases- Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>16</td>
+						<td>CD16.Yellow Fever</td>
+						<td><strong>YF.</strong></td>
+						<td><input id="OFWlKhzHh9f-HllvX50cXC0-val" name="entryfield" title="033B-CD16a. Yellow Fever - Cases" value="[ 033B-CD16a. Yellow Fever - Cases ]" /></td>
+						<td><input id="sd9j28SILfA-HllvX50cXC0-val" name="entryfield" title="033B-CD16b. Yellow Fever- Deaths" value="[ 033B-CD16b. Yellow Fever- Deaths ]" /></td>
+						<td><input id="rUnyiNHemiU-HllvX50cXC0-val" name="entryfield" title="033B-CD16c. Yellow Fever- Cases Tested" value="[ 033B-CD16c. Yellow Fever- Cases Tested ]" /></td>
+						<td><input id="moOykavv3xx-HllvX50cXC0-val" name="entryfield" title="033B-CD16d. Yellow Fever- Cases Positive" value="[ 033B-CD16d. Yellow Fever- Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>CD17. Other Viral Hemorrhagic Fevers (EVD, MVD,RVF,CCHF)</td>
+						<td><strong>VF.</strong></td>
+						<td><input id="YIxjjSbiGdh-HllvX50cXC0-val" name="entryfield" title="033B-CD17a. Other VHF  - Cases" value="[ 033B-CD17a. Other VHF  - Cases ]" /></td>
+						<td><input id="hUTVTaVmRCp-HllvX50cXC0-val" name="entryfield" title="033B-CD17b. Other VHF - Deaths" value="[ 033B-CD17b. Other VHF - Deaths ]" /></td>
+						<td><input id="wxdZMDN3Fz5-HllvX50cXC0-val" name="entryfield" title="033B-CD17c. Other VHF - Cases Tested" value="[ 033B-CD17c. Other VHF - Cases Tested ]" /></td>
+						<td><input id="Ui1lCzz67Rm-HllvX50cXC0-val" name="entryfield" title="033B-CD17d. Other VHF - Cases Positive" value="[ 033B-CD17d. Other VHF - Cases Positive ]" /></td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>Leprosy</td>
+						<td><strong>LP.</strong></td>
+						<td><input id="Oc2o5T4ys2b-HllvX50cXC0-val" name="entryfield" title="033B-CD18a. Leprosy - Cases" value="[ 033B-CD18a. Leprosy - Cases ]" /></td>
+						<td><input id="tGnoUAhxU8Z-HllvX50cXC0-val" name="entryfield" title="033B-CD18b. Leprosy - Deaths" value="[ 033B-CD18b. Leprosy - Deaths ]" /></td>
+						<td><input id="muft9GKkNfR-HllvX50cXC0-val" name="entryfield" title="033B-CD18c. Leprosy - Tested Cases" value="[ 033B-CD18c. Leprosy - Tested Cases ]" /></td>
+						<td><input id="Y3xE0bKPkje-HllvX50cXC0-val" name="entryfield" title="033B-CD18d. Leprosy - Positive Cases" value="[ 033B-CD18d. Leprosy - Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>Anthrax</td>
+						<td><strong>AX.</strong></td>
+						<td><input id="wdz7sv2vUb3-HllvX50cXC0-val" name="entryfield" title="033B-CD19a. Anthrax- Cases" value="[ 033B-CD19a. Anthrax- Cases ]" /></td>
+						<td><input id="e01KAZNBw2w-HllvX50cXC0-val" name="entryfield" title="033B-CD19b. Anthrax- Deaths" value="[ 033B-CD19b. Anthrax- Deaths ]" /></td>
+						<td><input id="oJyBon25VYT-HllvX50cXC0-val" name="entryfield" title="033B-CD19c. Anthrax- Tested Cases" value="[ 033B-CD19c. Anthrax- Tested Cases ]" /></td>
+						<td><input id="jf2SjaOdtME-HllvX50cXC0-val" name="entryfield" title="033B-CD19d. Anthrax- Positive Cases" value="[ 033B-CD19d. Anthrax- Positive Cases ]" /></td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>CD18. Maternal death</td>
+						<td><strong>MD.</strong></td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+						<td><input id="JOWj87d62MK-HllvX50cXC0-val" name="entryfield" title="033B-CD20. Maternal death- Deaths" value="[ 033B-CD20. Maternal death- Deaths ]" /></td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>21</td>
+						<td>CD19. Macerated Still births&nbsp;</td>
+						<td><strong>MB.</strong></td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+						<td><input id="DhOt8NQIwPC-HllvX50cXC0-val" name="entryfield" title="033B-CD21. Macerated Still births - Deaths" value="[ 033B-CD21. Macerated Still births - Deaths ]" /></td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>CD20. Fresh Still Birth</td>
+						<td><strong>FB.</strong></td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+						<td><input id="cjxTr4s8jLS-HllvX50cXC0-val" name="entryfield" title="033B-CD22b. Fresh Still Birth - Deaths" value="[ 033B-CD22b. Fresh Still Birth - Deaths ]" /></td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>23</td>
+						<td>CD21. Early Neonatal deaths 0-7 days</td>
+						<td><strong>ND.</strong></td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+						<td><input id="K1a7iJilOXE-HllvX50cXC0-val" name="entryfield" title="033B-CD23b. Early Neonatal deaths 0-7 days - Deaths" value="[ 033B-CD23b. Early Neonatal deaths 0-7 days - Deaths ]" /></td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+						<td style="background-color: rgb(170, 170, 170);">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<div class="tabcontent" id="tab3">
+			<!-- <table width="100%">
+				<tbody>
+					<tr class="section-head" colspan="9" width="100%">
+						<td><b>WEEKLY SUMMARY - OPD, eMTCT, MALARIA, TB, STOCK, GENEXPERT and TPT</b></td>
+					</tr>
+				</tbody>
+			</table> -->
+			<table width="100%">
+				<tbody>
+                    <tr class="section-head">
+                        <td colspan="2"><b>WEEKLY SUMMARY - OPD, eMTCT, MALARIA, TB, STOCK, GENEXPERT and TPT</b></td>
+                    </tr>
+					<tr>
+						<td valign="top">
+                            <table border="1" class="dataentryform" width="100%">
+                                <tbody>
+                                    <tr class="section-subhead">
+                                        <td colspan="3"><strong>4. OPD AND eMTCT SUMMARY THIS WEEK</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4"><strong>APT</strong></td>
+                                        <td>AP01. OPD New Attendance</td>
+                                        <td><input id="NeKm5EvaJYf-HllvX50cXC0-val" name="entryfield" title="033B-AP01. OPD New" value="[ 033B-AP01. OPD New ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>AP02. Total OPD Attendance</td>
+                                        <td><input id="ojsbyFx8jsM-HllvX50cXC0-val" name="entryfield" title="033B-AP02. Total OPD" value="[ 033B-AP02. Total OPD ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>AP03. Expected eMTCT Mothers in Appt</td>
+                                        <td><input id="dgGTqxmpNcc-HllvX50cXC0-val" name="entryfield" title="033B-AP03. Expected eMTCT Mothers in Appt" value="[ 033B-AP03. Expected eMTCT Mothers in Appt ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>AP04. eMTCT Missed Appointments</td>
+                                        <td><input id="mIBmV0slqJC-HllvX50cXC0-val" name="entryfield" title="033B-AP04. eMTCT Missed Appointments" value="[ 033B-AP04. eMTCT Missed Appointments ]" /></td>
+                                    </tr>
+                                    <tr class="section-subhead">
+                                        <td colspan="3"><strong>5. SUMMARY OF MALARIA CASES TESTED AND TREATED THIS WEEK</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="10"><strong>MAT</strong></td>
+                                        <td>MA01. Suspected Malaria (Fever)</td>
+                                        <td><input id="Nn9jPjcjg1j-HllvX50cXC0-val" name="entryfield" title="033B-MA01. Suspected Malaria (Fever)" value="[ 033B-MA01. Suspected Malaria (Fever) ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MA02. Cases Tested with RDT</td>
+                                        <td><input id="lQXr10kZXrB-HllvX50cXC0-val" name="entryfield" title="033B-MA02. Cases Tested with RDT" value="[ 033B-MA02. Cases Tested with RDT ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MA03. RDT Positive Cases</td>
+                                        <td><input id="IPKYiWv1XVS-HllvX50cXC0-val" name="entryfield" title="033B-MA03. RDT Positive Cases" value="[ 033B-MA03. RDT Positive Cases ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MA04. Cases Tested with Microscopy</td>
+                                        <td><input id="RGDv14C4Cdw-HllvX50cXC0-val" name="entryfield" title="033B-MA04. Cases Tested with Microscopy" value="[ 033B-MA04. Cases Tested with Microscopy ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MA05. Microscopy Positive Cases</td>
+                                        <td><input id="QUkfKUGRuPs-HllvX50cXC0-val" name="entryfield" title="033B-MA05. Microscopy Positive Cases" value="[ 033B-MA05. Microscopy Positive Cases ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MA06. Not tested cases treated</td>
+                                        <td><input id="PV8F3aPDKCu-HllvX50cXC0-val" name="entryfield" title="033B-MA06. Not tested cases treated" value="[ 033B-MA06. Not tested cases treated ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MA07. RDT Negative Cases Treated</td>
+                                        <td><input id="YBXFadujBCQ-HllvX50cXC0-val" name="entryfield" title="033B-MA07. RDT Negative Cases Treated" value="[ 033B-MA07. RDT Negative Cases Treated ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MA08. RDT Positive Cases Treated</td>
+                                        <td><input id="qR6OsOxADKt-HllvX50cXC0-val" name="entryfield" title="033B-MA08. RDT Positive Cases Treated" value="[ 033B-MA08. RDT Positive Cases Treated ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MA09. Microscopy Negative Cases Treated</td>
+                                        <td><input id="sDDBGMsrw6z-HllvX50cXC0-val" name="entryfield" title="033B-MA09. Microscopy Negative Cases Treated" value="[ 033B-MA09. Microscopy Negative Cases Treated ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MA10. Microscopy Positive Cases Treated</td>
+                                        <td><input id="S97lGebltuo-HllvX50cXC0-val" name="entryfield" title="033B-MA10. Microscopy Positive Cases Treated" value="[ 033B-MA10. Microscopy Positive Cases Treated ]" /></td>
+                                    </tr>
+                                    <tr class="section-subhead">
+                                        <td colspan="3"><strong>6. SUMMARY OF TB CASES TESTED AND TREATED THIS WEEK</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="7"><strong>TB</strong></td>
+                                        <td>TB01. Clients Screened for TB in OPD</td>
+                                        <td><input id="AKG3ZCGDvs1-HllvX50cXC0-val" name="entryfield" title="033B-TB01. Clients Screened for TB in OPD" value="[ 033B-TB01. Clients Screened for TB in OPD ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TB02. Presumptive TB cases identified</td>
+                                        <td><input id="uvmQJ5dr7QX-HllvX50cXC0-val" name="entryfield" title="033B-TB02. Presumptive TB cases identified" value="[ 033B-TB02. Presumptive TB cases identified ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TB03. New and Relapse TB cases diagnosed and registered</td>
+                                        <td><input id="cFoDFauaBh6-HllvX50cXC0-val" name="entryfield" title="033B-TB03. New and Relapse TB diagn &amp; registered" value="[ 033B-TB03. New and Relapse TB diagn &amp; registered ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TB04. New and Relapse TB cases started on treatment</td>
+                                        <td><input id="WYxfBZgpLpJ-HllvX50cXC0-val" name="entryfield" title="033B-TB04. New and Relapse TB cases started on TX" value="[ 033B-TB04. New and Relapse TB cases started on TX ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TB05. Bacteriologically TB cases registered</td>
+                                        <td><input id="afH5Nd93A3h-HllvX50cXC0-val" name="entryfield" title="033B-TB05. Bacteriologically TB cases registered" value="[ 033B-TB05. Bacteriologically TB cases registered ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TB06. Bacteriologically&nbsp; Confirmed TB cases tested with GeneXpert</td>
+                                        <td><input id="h66Mosg7ikb-HllvX50cXC0-val" name="entryfield" title="033B-TB06. Bacteriologically  Confirmed TB cases tested with GeneXpert" value="[ 033B-TB06. Bacteriologically  Confirmed TB cases tested with GeneXpert ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TB07. Number of TB contacts traced and screened</td>
+                                        <td><input id="l36n5wq1okb-HllvX50cXC0-val" name="entryfield" title="033B-TB07. TB contacts traced &amp; screened" value="[ 033B-TB07. TB contacts traced &amp; screened ]" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+						</td>
+						<td valign="top">
+                            <table border="1" class="dataentryform" width="100%">
+                                <tbody>
+                                    <tr class="section-subhead">
+                                        <td colspan="3"><strong>7. TRACER MEDICINES - STOCK BALANCE </strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="8">TRA</td>
+                                        <td>TR01. ACT (Tablets)</td>
+                                        <td><input id="yEBHw6JcWsq-HllvX50cXC0-val" name="entryfield" title="033B-TR01. ACT (Tablets)" value="[ 033B-TR01. ACT (Tablets) ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TR02.ORS (Sachets)</td>
+                                        <td><input id="ixYHqMC7yMY-HllvX50cXC0-val" name="entryfield" title="033B-TR02. ORS (Sachets)" value="[ 033B-TR02. ORS (Sachets) ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TR03. Measles Vaccine Doses</td>
+                                        <td><input id="cigMpKykA1Q-HllvX50cXC0-val" name="entryfield" title="033B-TR03. Measles Vaccine Doses" value="[ 033B-TR03. Measles Vaccine Doses ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TR04. Amoxicillin Dispersible 250mg (Tablets)</td>
+                                        <td><input id="bTikzoCBgYN-HllvX50cXC0-val" name="entryfield" title="033B-TR04. Amoxcillin Dispersible 250mg" value="[ 033B-TR04. Amoxcillin Dispersible 250mg ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TR05. Depot medroxy progesterone acetate (DPMA) injectable </td>
+                                        <td><input id="FUmg0fxlH9A-HllvX50cXC0-val" name="entryfield" title="033B-TR05. DMPA - Injectable" value="[ 033B-TR05. DMPA - Injectable ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TR06. IV Artesunate 60mg vials</td>
+                                        <td><input id="su413J34Lfz-HllvX50cXC0-val" name="entryfield" title="033B-TR06. IV Artesunate 60 mg vials" value="[ 033B-TR06. IV Artesunate 60 mg vials ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TR07. Fansidar tablets</td>
+                                        <td><input id="CeqyLDLL0xk-HllvX50cXC0-val" name="entryfield" title="033B-TR07. Fansidar Tablets" value="[ 033B-TR07. Fansidar Tablets ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TR08. RDT (Malaria) tests</td>
+                                        <td><input id="OUq5CEoJ97W-HllvX50cXC0-val" name="entryfield" title="033B-TR08. RDT (Malaria) Tests" value="[ 033B-TR08. RDT (Malaria) Tests ]" /></td>
+                                    </tr>
+                                    <tr class="section-subhead">
+                                        <td colspan="3"><strong>8. HIV TESTING KITS &amp; eMTCT Drugs - STOCK BALANCE</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="10"><strong>ARV</strong></td>
+                                        <td>RV01. Determine HIV 1&amp;2 screening test</td>
+                                        <td><input id="jxL73ftrOK9-HllvX50cXC0-val" name="entryfield" title="033B-RV01. Determine HIV 1&amp;2 screening test" value="[ 033B-RV01. Determine HIV 1&amp;2 screening test ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RV02. ARV (Fixed DC - eMTCT)</td>
+                                        <td><input id="JHLw506IuJ8-HllvX50cXC0-val" name="entryfield" title="033B-RV02. ARV (Fixed DC - eMTCT)" value="[ 033B-RV02. ARV (Fixed DC - eMTCT) ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RV03. Lopinavir/Ritonavir pellets - packs of 120 Capsules</td>
+                                        <td><input id="bEfmfYj0BSt-HllvX50cXC0-val" name="entryfield" title="033B-RV03. Lopinavir/Ritonavir pellets" value="[ 033B-RV03. Lopinavir/Ritonavir pellets ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RV04. Nevirapine suspension - bottle of 10MI/100ml</td>
+                                        <td><input id="FIzJ2t9QFtd-HllvX50cXC0-val" name="entryfield" title="033B-RV04. Nevirapine suspension" value="[ 033B-RV04. Nevirapine suspension ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RV05. Tenofovir/Lamivudine/Dolutegravir Packs of 30 tabs</td>
+                                        <td><input id="wgv5EESEIZE-HllvX50cXC0-val" name="entryfield" title="033B-RV05. Tenofovir/Lamivudine/Dolutegravir" value="[ 033B-RV05. Tenofovir/Lamivudine/Dolutegravir ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RV06. RHZE Blister of 28 tablets</td>
+                                        <td><input id="r0RcAUd5LGS-HllvX50cXC0-val" name="entryfield" title="033B-RV06. RHZE Blister of 28 tablets" value="[ 033B-RV06. RHZE Blister of 28 tablets ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RV07. RE Blister of 28 tablets</td>
+                                        <td><input id="fxDyKa9mcVG-HllvX50cXC0-val" name="entryfield" title="033B-RV07. RE Blister of 28 tablets" value="[ 033B-RV07. RE Blister of 28 tablets ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RV08. R(75)H(50)Z(150)Blister of 28 tablets</td>
+                                        <td><input id="tAODI3pjISY-HllvX50cXC0-val" name="entryfield" title="033B-RV08. R(75)H(50)Z(150)Blister of 28 tablets" value="[ 033B-RV08. R(75)H(50)Z(150)Blister of 28 tablets ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RV09. INH 300mg Blister of 28 tablets</td>
+                                        <td><input id="fxksCzbblTd-HllvX50cXC0-val" name="entryfield" title="033B-RV09. INH 300mg Blister of 28 tablets" value="[ 033B-RV09. INH 300mg Blister of 28 tablets ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RV10. INH 100mg Blister of 28 tablets</td>
+                                        <td><input id="xC9G2GO2iNk-HllvX50cXC0-val" name="entryfield" title="033B-RV10. INH 100mg Blister of 10 tablets" value="[ 033B-RV10. INH 100mg Blister of 10 tablets ]" /></td>
+                                    </tr>
+                                    <tr class="section-subhead">
+                                        <td colspan="3"><strong>9. SUMMARY OF GENEXPERT REPORT FOR GENEXPERT SITES ONLY</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="7"><strong>GP</strong></td>
+                                        <td>GP01. No. of samples tested</td>
+                                        <td><input id="znU5JG92MCa-HllvX50cXC0-val" name="entryfield" title="033B-GP01. No. of samples tested" value="[ 033B-GP01. No. of samples tested ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>GP02. No. of samples rejected</td>
+                                        <td><input id="gDHZ6DRyDQ1-HllvX50cXC0-val" name="entryfield" title="033B-GP02. No. of samples rejected" value="[ 033B-GP02. No. of samples rejected ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>GP03. Total MTB detected</td>
+                                        <td><input id="GEI030y9HIt-HllvX50cXC0-val" name="entryfield" title="033B-GP03. Total MTB detected" value="[ 033B-GP03. Total MTB detected ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>GP04. Total No. Rif R</td>
+                                        <td><input id="EWmqTwV0prl-HllvX50cXC0-val" name="entryfield" title="033B-GP04. Total No. Rif R" value="[ 033B-GP04. Total No. Rif R ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>GP05. No. of errors/invalid results</td>
+                                        <td><input id="k42yhRI4k1O-HllvX50cXC0-val" name="entryfield" title="033B-GP05. No. of errors/invalid results" value="[ 033B-GP05. No. of errors/invalid results ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>GP06. No. of GeneXpert modules working</td>
+                                        <td><input id="eH41w0o5oXd-HllvX50cXC0-val" name="entryfield" title="033B-GP06. No. of GeneXpert modules working" value="[ 033B-GP06. No. of GeneXpert modules working ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>GP07. No. of catridges remaining</td>
+                                        <td><input id="eG1MxlXVd5o-HllvX50cXC0-val" name="entryfield" title="033B-GP07. No. of catridges remaining" value="[ 033B-GP07. No. of catridges remaining ]" /></td>
+                                    </tr>
+                                    <tr class="section-subhead">
+                                        <td colspan="3"><strong>10. SUMMARY OF TPT INITIATION</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4"><strong>TPT</strong></td>
+                                        <td>TP01. Number of adult ART clients initiated TPT</td>
+                                        <td><input id="jU86GffkmRX-HllvX50cXC0-val" name="entryfield" title="033B-TP01. No. of Adults ART clients initiated TPT" value="[ 033B-TP01. No. of Adults ART clients initiated TPT ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TP02. Number of children and adolescents on ART who started TPT</td>
+                                        <td><input id="YPnHPA8gVEJ-HllvX50cXC0-val" name="entryfield" title="033B-TP02. No. of Children &amp; adoloscents who strated TPT" value="[ 033B-TP02. No. of Children &amp; adoloscents who strated TPT ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TP03. Number of children 0-4 years who are contacts of TB patients eligible for TPT</td>
+                                        <td><input id="x3FWxUtAPcm-HllvX50cXC0-val" name="entryfield" title="033B-TP03. No. of Children 0-4 yrs contacts eligible for TPT" value="[ 033B-TP03. No. of Children 0-4 yrs contacts eligible for TPT ]" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TP04. Number of children 0-4 years who are contacts of TB patients initiated on TPT</td>
+                                        <td><input id="mtZ8IrgNhlD-HllvX50cXC0-val" name="entryfield" title="033B-TP04. No. of children 0 ÔøΩ 4 yrs who are contacts of TB patients initiated on TPT" value="[ 033B-TP04. No. of children 0 ÔøΩ 4 yrs who are contacts of TB patients initiated on TPT ]" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<script>
+function opentab(evt, tabName) {
+    var tabcontents = document.getElementsByClassName("tabcontent");
+    var tablinks = document.getElementsByClassName("tablinks");
+    for (var j = 0; j < tabcontents.length; j++) {
+        tabcontents[j].style.display = "none";
+        tablinks[j].className = tablinks[j].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.className += " active";
+}
+
+// Resets all Tabcontents display to block to enable them on a printed document
+window.onbeforeprint = function () {
+    var tabcontents = document.getElementsByClassName("tabcontent");
+    var tablinks = document.getElementsByClassName("tablinks");
+    for(var i = 0;  i < tabcontents.length; i++){
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        if(tabcontents[i].style.display == 'none'){
+            tabcontents[i].style.display = "block";
+        }                
+    }
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+<p>&nbsp;</p>
