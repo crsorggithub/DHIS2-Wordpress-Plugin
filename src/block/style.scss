@@ -1,0 +1,25 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-dhis-block {
+	background: $red;
+	border: 0.2rem solid $black;
+	color: $black;
+	margin: 0 auto;
+	// max-width: 740px;
+	height: 350px;
+	padding: 2rem;
+}
+
+.dhis2-slider {
+	height: 440px;
+}
+
+.dhis2-map {
+	height: '75vh';
+	padding: '0 4px 4px';
+	overflow: 'auto';
+}

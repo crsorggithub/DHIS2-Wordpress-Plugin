@@ -1,0 +1,22 @@
+{
+	"name": "dhis-analytics-block",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"start": "cgb-scripts start",
+		"build": "cgb-scripts build",
+		"eject": "cgb-scripts eject"
+	},
+	"dependencies": {
+		"@material-ui/core": "^4.8.3",
+		"@material-ui/icons": "^4.5.1",
+		"axios": "^0.19.0",
+		"cgb-scripts": "1.20.0",
+		"node-i18n-util": "^1.0.5",
+		"shortid": "^2.2.15"
+	},
+	"devDependencies": {
+		"file-loader": "^5.0.2",
+		"mem": ">=4.0.0"
+	}
+}

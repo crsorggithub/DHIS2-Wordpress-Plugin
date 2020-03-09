@@ -1,0 +1,122 @@
+body {
+	font-family: "Lato", sans-serif;
+}
+input.entryfield {
+	width: 60% !important;
+}
+input.indicator {
+	width: 60% !important;
+}
+input.dataelementtotal {
+	width: 60% !important;
+}
+
+/* Style the tab */
+
+.tab {
+	float: left;
+	background-color: #d0ebd0;
+	width: 240px;
+	height: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	display: block;
+	background-color: inherit;
+	color: black;
+	padding: 5px 16px;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 15px;
+	border-bottom: 1px solid #a4d2a3;
+	outline: #ffffff solid 1px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #669872;
+	color: #ffffff;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+	background-color: #669872;
+	color: #ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+	float: left;
+	padding: 0px 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.section-head td {
+	background-color: #669872;
+}
+
+.section-head {
+	color: #ffffff;
+	font-size: 15px;
+	margin: 4px;
+	font-weight: bold;
+}
+
+.section-subhead td {
+	background-color: #d0ebd0;
+}
+
+table,
+table tr,
+table tr td {
+	border: 1px solid #a4d2a3;
+}
+
+.dataentryform tr:hover {
+	background-color: #d4fec3;
+}
+</style > <style id="print-dataset" media="print" type="text/css" > body {
+	font-family: "Lato", sans-serif;
+	font-size: 12px;
+	zoom: 65%;
+}
+
+.tab {
+	display: none;
+}
+
+.tabcontent {
+	float: left;
+	padding: 0px 0px;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+table,
+tr {
+	break-after: avoid;
+	page-break-after: avoid;
+	break-before: avoid;
+	page-break-before: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
+
+input.entryfield,
+.dataelementtotal,
+.indicator {
+	width: 3.5em !important;
+}
+
+#completedByDiv,
+#infoDiv,
+div#completenessDiv input,
+div#completenessDiv span,
+#fileDeleteConfirmationDialog {
+	display: none;
+}
