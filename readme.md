@@ -1,6 +1,20 @@
 # DHIS2 Wordpress Plugin
 A WordPress Guttenberg block plugin for displaying DHIS2 dashboards into a WordPress webpage.
 
+# DHIS2 web portal Wordpress plugin wins best new app 
+
+This years' DHIS2 conference was held online, Sept 21-24; [see the sessions on YouTube](https://www.youtube.com/watch?v=hoMfHqbvhx8&list=PLo6Seh-066Ry07Eicb2QhE3B5URWZPbb2) to learn more about what's new. 
+
+Keeping with the conference tradition, on the final day DHIS2 implementers from around the world enter a competition: submitting custom applications that may serve the wider community; tools apps plugins etc. that are open source and extend the use of the DHIS2. The top tools are voted on my conference participants.
+
+This year, LogicalOutcomes is proud to announce the winner: a DHIS2 web portal plugin developed by Stephen Ocaya of StephOcay Limited, and the HISP Uganda team. This plugin allows Wordpress websites to pull select DHIS2 reports/content into the site. In other words, creating a public DHIS2 dashboard outside of the DHIS2 software. 
+
+This plugin was initiated by Catholic Relief Services’ Rapid Response Mechanism in Mali financed by USAID/BHA, with contributions from LogicalOutcomes.
+
+The 'DHIS2 Analytics' is a WordPress Guttenberg Block plugin is available on [Catholic Relief Services' GitHub page](https://github.com/crsorggithub/DHIS2-Wordpress-Plugin)
+
+See the plugin in action [http://rrm-mali-public.org/en/reports/assessment-data/]http://rrm-mali-public.org/en/reports/assessment-data/
+
 # Software Manual
 ## DHIS2 Analytics
 Edition: January 2020
